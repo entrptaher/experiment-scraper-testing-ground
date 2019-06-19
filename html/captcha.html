@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Web Scraper Testing Ground</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="/normalize.css" />
+    <link rel="stylesheet" href="/main.css" />
+    <link rel="stylesheet" href="/captcha.css" />
+    <link rel="stylesheet" href="/QapTcha.jquery.css">
+  </head>
+  <body>
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(["_setAccount", "UA-4436411-8"]);
+      _gaq.push(["_setDomainName", "extract-web-data.com"]);
+      _gaq.push(["_trackPageview"]);
+
+      (function() {
+        var ga = document.createElement("script");
+        ga.type = "text/javascript";
+        ga.async = true;
+        ga.src =
+          ("https:" == document.location.protocol
+            ? "https://ssl"
+            : "http://www") + ".google-analytics.com/ga.js";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+    <!--[if lt IE 7]>
+      <p class="chromeframe">
+        You are using an outdated browser.
+        <a href="http://browsehappy.com/">Upgrade your browser today</a> or
+        <a href="http://www.google.com/chromeframe/?redirect=true"
+          >install Google Chrome Frame</a
+        >
+        to better experience this site.
+      </p>
+    <![endif]-->
+    <div id="topbar"></div>
+    <a href="/" style="text-decoration: none">
+      <div id="title">WEB SCRAPER TESTING GROUND</div>
+      <div id="logo"></div>
+    </a>
+    <div id="content">
+      <h1>CAPTCHA</h1>
+      <div id="caseinfo">
+        <a
+          href="http://extract-web-data.com/captcha-for-spam-protection-review/"
+          target="_blank"
+          >CAPTCHA</a
+        >
+        (Completely Automated Public Turing test to tell Computers and Humans
+        Apart) is used in attempts to prevent automated software from sending
+        requests to a server. A good web scraping software should have some
+        means for CAPTCHA recognition.
+        <p></p>
+        <p>This test checks scraper's ability to:</p>
+        <ol>
+          <li>Recognize Character Captchas</li>
+          <li>Scrape websites with Draggable Captchas</li>
+          <li>Handle Drag &amp; Drop Captchas</li>
+        </ol>
+        <p>How it works:</p>
+        <ul>
+          <li>
+            Using the web scraper you need to get
+            <b class="success">THE FORM WAS SUCCESSFULLY SUBMITTED</b> for all
+            three forms with captchas below
+          </li>
+          <li>
+            To achieve this in <b>Character Captcha</b> user needs to enter
+            right characters into the text box
+          </li>
+          <li>
+            To achieve this in <b>Draggable Captcha</b> user needs to move the
+            slider to the right
+          </li>
+          <li>
+            To achieve this in <b>Drag &amp; Drop Captcha</b> user needs to move
+            the proper icon to the circle
+          </li>
+        </ul>
+      </div>
+
+      <hr />
+
+      <div id="case_captcha">
+        <h3>
+          Character Captcha (<a href="http://www.phpcaptcha.org/">Securimage</a
+          >)
+        </h3>
+        <br />
+        <b>Notice</b>: Undefined variable: securimageOk in
+        <b>/var/www/scraping.pro/testing-ground/captcha.php</b> on line <b>86</b
+        ><br />
+        <form method="post" action="?ssubmit">
+          <table cellpadding="5px">
+            <tbody>
+              <tr>
+                <td>
+                  <img
+                    id="captcha"
+                    src="/securimage_show.php"
+                    alt="CAPTCHA Image"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="captcha_code"
+                    size="10"
+                    maxlength="6"
+                  /><br />
+                  <a
+                    href="#"
+                    onclick="document.getElementById('captcha').src = '/securimage_show.php?' + Math.random(); return false"
+                    >different image</a
+                  >
+                  <br /><input
+                    type="submit"
+                    name="submit"
+                    value="Submit form"
+                  />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </form>
+        <h3>
+          Draggable Captcha (<a
+            href="http://www.myjqueryplugins.com/jquery-plugin/qaptcha"
+            target="_blank"
+            >QapTcha</a
+          >)
+        </h3>
+        <br />
+        <b>Notice</b>: Undefined variable: qaptchaOk in
+        <b>/var/www/scraping.pro/testing-ground/captcha.php</b> on line
+        <b>105</b><br />
+        <form method="post" action="?qsubmit">
+          <div class="QapTcha">
+            <div class="bgSlider"><div class="Slider ui-draggable"></div></div>
+            <div class="clr"></div>
+            <div class=" TxtStatus dropError">
+              Slide right to submit the form
+            </div>
+            <input
+              name="77JySZUveV_BmvN#xEak_RkCTNChyKcD"
+              value="DaYps32"
+              type="hidden"
+            />
+          </div>
+          <div style="clear: both;margin-bottom:5px"></div>
+          <input
+            type="submit"
+            name="submit"
+            value="Submit form"
+            disabled="disabled"
+          />
+        </form>
+        <h3>
+          Drag &amp; Drop Captcha (<a
+            href="http://www.webdesignbeach.com/beachbar/ajax-fancy-captcha-jquery-plugin"
+            target="_blank"
+            >AJAX FANCY CAPTCHA</a
+          >)
+        </h3>
+        <br />
+        <b>Notice</b>: Undefined variable: fancyOk in
+        <b>/var/www/scraping.pro/testing-ground/captcha.php</b> on line
+        <b>115</b><br />
+        <form method="post" action="?fsubmit" id="myForm">
+          <div
+            class="ajax-fc-container"
+            style="background-color: rgb(192, 192, 192);"
+          >
+            <b class="ajax-fc-rtop"
+              ><b
+                class="ajax-fc-r1"
+                style="background-color: rgb(192, 192, 192);"
+              ></b>
+              <b
+                class="ajax-fc-r2"
+                style="background-color: rgb(192, 192, 192);"
+              ></b>
+              <b
+                class="ajax-fc-r3"
+                style="background-color: rgb(192, 192, 192);"
+              ></b>
+              <b
+                class="ajax-fc-r4"
+                style="background-color: rgb(192, 192, 192);"
+              ></b></b
+            ><img
+              class="ajax-fc-border"
+              id="ajax-fc-left"
+              src="/border-left.png"
+            /><img
+              class="ajax-fc-border"
+              id="ajax-fc-right"
+              src="/border-right.png"
+            />
+            <div id="ajax-fc-content">
+              <div id="ajax-fc-left">
+                <p id="ajax-fc-task">
+                  Verify that you are a human,<br />drag
+                  <span>pencil</span> into the circle.
+                </p>
+                <ul id="ajax-fc-task">
+                  <li class="ajax-fc-0">
+                    <img src="/item-none.png" alt="" />
+                  </li>
+                  <li class="ajax-fc-1">
+                    <img src="/item-scissors.png" alt="" />
+                  </li>
+                  <li class="ajax-fc-2">
+                    <img src="/item-clock.png" alt="" />
+                  </li>
+                  <li class="ajax-fc-3">
+                    <img src="/item-heart.png" alt="" />
+                  </li>
+                  <li
+                    class="ajax-fc-4 ajax-fc-highlighted ui-draggable"
+                    style="position: relative;"
+                  >
+                    <img src="/item-pencil.png" alt="" />
+                  </li>
+                </ul>
+              </div>
+              <div id="ajax-fc-right">
+                <a target="_blank" href="http://www.webdesignbeach.com"
+                  ><img
+                    id="ajax-fc-backlink"
+                    src="/wdb.png"
+                    alt="Web Design Beach"
+                /></a>
+                <p id="ajax-fc-circle" class="ui-droppable"></p>
+              </div>
+            </div>
+            <div id="ajax-fc-corner-spacer"></div>
+            <b class="ajax-fc-rbottom"
+              ><b
+                class="ajax-fc-r4"
+                style="background-color: rgb(192, 192, 192);"
+              ></b>
+              <b
+                class="ajax-fc-r3"
+                style="background-color: rgb(192, 192, 192);"
+              ></b>
+              <b
+                class="ajax-fc-r2"
+                style="background-color: rgb(192, 192, 192);"
+              ></b>
+              <b
+                class="ajax-fc-r1"
+                style="background-color: rgb(192, 192, 192);"
+              ></b
+            ></b>
+          </div>
+          <div style="clear: both;margin-bottom:5px"></div>
+          <input type="submit" name="submit" value="Submit form" />
+        </form>
+      </div>
+      <br /><br /><br />
+
+      <script>
+        $(document).ready(function() {
+          $(".QapTcha").QapTcha({
+            autoSubmit: true,
+            autoRevert: true,
+            PHPfile: "?qaptcha",
+            txtLock: "Slide right to submit the form"
+          });
+
+          $(".ajax-fc-container").captcha({
+            borderColor: "silver",
+            text:
+              "Verify that you are a human,<br />drag <span>scissors</span> into the circle."
+          });
+        });
+      </script>
+    </div>
+  </body>
+</html>

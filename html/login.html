@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Web Scraper Testing Ground</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="/normalize.css" />
+    <link rel="stylesheet" href="/main.css" />
+  </head>
+  <body>
+    <div id="topbar"></div>
+    <a href="/" style="text-decoration: none">
+      <div id="title">WEB SCRAPER TESTING GROUND</div>
+      <div id="logo"></div>
+    </a>
+    <div id="content">
+      <h1>LOGIN</h1>
+      <div id="caseinfo">
+        Often in order to reach the desired information you need to be logged in
+        to the website. Most of today's websites use so-called form-based
+        authentication which implies sending user credentials using POST method,
+        authenticating it on the server and storing user's session in a cookie.
+        <p></p>
+        <p>This simple test shows scraper's ability to:</p>
+        <ol>
+          <li>Send user credentials via POST method</li>
+          <li>Receive, Keep and Return a session cookie</li>
+          <li>Process HTTP redirect (302)</li>
+        </ol>
+        <p>How to test:</p>
+        <ol>
+          <li>
+            Enter <b>admin</b> and <b>12345</b> in the form below and press
+            <b>Login</b>
+          </li>
+          <li>
+            If you see <span class="success">WELCOME :)</span> then the user
+            credentials were sent, the cookie was passed and HTTP redirect was
+            processed
+          </li>
+          <li>
+            If you see <span class="error">ACCESS DENIED!</span> then either you
+            entered wrong credentials or they were not sent to the server
+            properly
+          </li>
+          <li>
+            If you see
+            <span class="error"
+              >THE SESSION COOKIE IS MISSING OR HAS A WRONG VALUE!</span
+            >
+            then the user credentials were properly sent but the session cookie
+            was not properly stored or passed
+          </li>
+          <li>
+            If you see <span class="success">REDIRECTING...</span> then the user
+            credentials were properly sent but HTTP redirection was not
+            processed
+          </li>
+          <li>Click <b>GO BACK</b> to start again</li>
+        </ol>
+      </div>
+
+      <hr />
+
+      <div id="case_login">
+        <h3>Please, login:</h3>
+        <form action="/login" method="POST">
+          <label for="usr">User name:</label>
+          <input
+            id="usr"
+            name="username"
+            type="text"
+            placeholder="enter 'admin' here"
+          />
+          <label for="pwd">Password:</label>
+          <input
+            id="pwd"
+            name="password"
+            type="text"
+            placeholder="enter '12345' here"
+          />
+          <input type="submit" value="Login" />
+        </form>
+      </div>
+      <br /><br /><br />
+    </div>
+  </body>
+</html>
