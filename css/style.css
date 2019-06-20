@@ -2,7 +2,10 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Didact Gothic', sans-serif;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+body {
+  line-height: 1.4;
 }
 
 a {
@@ -17,7 +20,7 @@ a {
 .heading {
   background: #ffbf00;
   margin: 0;
-  font-size: 3.75rem;
+  font-size: 40pt;
   color: black;
   padding-left: 230px;
   font-weight: bold;
@@ -30,7 +33,7 @@ a {
   width: 183px;
   height: 150px;
   margin-top: -100px;
-  margin-left: 45px;
+  margin-left: 30px;
   background-repeat: no-repeat;
 
 }
@@ -52,6 +55,7 @@ a {
   flex-wrap: wrap;
   width: 1260px;
   margin: 0 auto;
+  margin-left: 30px;
   padding-top: 1.25rem;
 
 }
@@ -67,6 +71,8 @@ a {
   margin: 10px;
   text-align: center;
   border: solid black 2px;
+  padding: 23pt 0;
+  line-height: 11.5pt;
 }
 
 .boxes .blur {
@@ -74,22 +80,18 @@ a {
 }
 
 
-.boxes .box h3,
-.boxes .blur h3 {
-  padding-top: 1rem;
-  font-size: 27px;
+.boxes .box a,
+.boxes .blur a {
+  color: white;
+  font-size: 20pt;
 }
 
-
-.boxes .box h3 a,
-.boxes .blur h3 a {
-  color: #fff;
-  padding-top: 2rem;
-  font-size: 27px;
+.boxes .box  p {
+  font-size: 10pt;
 }
 
-.boxes .box P,
-.boxes .blur h3 {
+.boxes .box p,
+.boxes .blur a {
   color: #cccccc;
   padding-top: 1rem;
 
@@ -98,10 +100,9 @@ a {
 
 .boxes .box:hover {
   background: #ffbf00;
-  color: red;
 }
 
-.boxes .box:hover h3 {
+.boxes .box:hover a {
   color: black;
 }
 
