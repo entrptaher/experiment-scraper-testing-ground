@@ -90,8 +90,7 @@ a {
   font-size: 10pt;
 }
 
-.boxes .box p,
-.boxes .blur a {
+.boxes .box p {
   color: #cccccc;
   padding-top: 1rem;
 
