@@ -1,0 +1,110 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Didact Gothic', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.blue {
+  background: #00a0c6;
+  height: 30px;
+}
+
+.heading {
+  background: #ffbf00;
+  margin: 0;
+  font-size: 3.75rem;
+  color: black;
+  padding-left: 230px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.logo {
+  background-image: url('../img/logo.png');
+  cursor: pointer;
+  width: 183px;
+  height: 150px;
+  margin-top: -100px;
+  margin-left: 45px;
+  background-repeat: no-repeat;
+
+}
+
+.heading .title {
+  margin: 0;
+  background: #ffbf00;
+  font-size: 40pt;
+  color: black;
+  padding-left: 230px;
+  font-weight: bold;
+  cursor: pointer;
+
+
+}
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1260px;
+  margin: 0 auto;
+  padding-top: 1.25rem;
+
+}
+
+
+.boxes .box,
+.boxes .blur {
+  cursor: pointer;
+  /* padding: 30px; */
+  width: 394px;
+  height: 109px;
+  background: #00a0c6;
+  margin: 10px;
+  text-align: center;
+  border: solid black 2px;
+}
+
+.boxes .blur {
+  opacity: 0.2;
+}
+
+
+.boxes .box h3,
+.boxes .blur h3 {
+  padding-top: 1rem;
+  font-size: 27px;
+}
+
+
+.boxes .box h3 a,
+.boxes .blur h3 a {
+  color: #fff;
+  padding-top: 2rem;
+  font-size: 27px;
+}
+
+.boxes .box P,
+.boxes .blur h3 {
+  color: #cccccc;
+  padding-top: 1rem;
+
+}
+
+
+.boxes .box:hover {
+  background: #ffbf00;
+  color: red;
+}
+
+.boxes .box:hover h3 {
+  color: black;
+}
+
+.boxes .box:hover p {
+  color: #333;
+}
