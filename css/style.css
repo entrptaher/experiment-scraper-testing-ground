@@ -1,11 +1,12 @@
-
 @import url('../fonts/Century Gothic.ttf');
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
 }
+
 body {
   line-height: 1.4;
 }
@@ -38,75 +39,4 @@ a {
   margin-left: 30px;
   background-repeat: no-repeat;
 
-}
-
-.heading .title {
-  margin: 0;
-  background: #ffbf00;
-  font-size: 40pt;
-  color: black;
-  padding-left: 230px;
-  font-weight: bold;
-  cursor: pointer;
-
-
-}
-
-.boxes {
-  display: flex;
-  flex-wrap: wrap;
-  width: 1260px;
-  margin: 0 auto;
-  margin-left: 30px;
-  padding-top: 1.25rem;
-
-}
-
-
-.boxes .box,
-.boxes .blur {
-  cursor: pointer;
-  /* padding: 30px; */
-  width: 394px;
-  height: 109px;
-  background: #00a0c6;
-  margin: 10px;
-  text-align: center;
-  border: solid black 2px;
-  padding: 23pt 0;
-  line-height: 11.5pt;
-}
-
-.boxes .blur {
-  opacity: 0.2;
-}
-
-
-.boxes .box a,
-.boxes .blur a {
-  color: white;
-  font-size: 20pt;
-}
-
-.boxes .box  p {
-  font-size: 10pt;
-}
-
-.boxes .box p {
-  color: #cccccc;
-  padding-top: 1rem;
-
-}
-
-
-.boxes .box:hover {
-  background: #ffbf00;
-}
-
-.boxes .box:hover a {
-  color: black;
-}
-
-.boxes .box:hover p {
-  color: #333;
 }

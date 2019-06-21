@@ -1,0 +1,51 @@
+.container {
+  margin-left: 25px;
+}
+
+.report {
+  color: #555555;
+  font-size: 16px;
+}
+
+.report .title {
+  font-weight: normal;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 53px;
+  color: #222222;
+}
+
+.case {
+  margin-bottom: 12px;
+}
+
+
+.list {
+  margin-left: 55px;
+  margin-bottom: 20px;
+}
+
+.test {
+  margin-top: 25px;
+  margin-bottom: 12px;
+}
+
+
+thead {
+  display: table-header-group;
+  /* h5bp.com/t */
+}
+
+tr {
+  page-break-inside: avoid;
+}
+
+.case_table td {
+  text-align: right;
+}
+
+.case_table th {
+  background: #333;
+  color: white;
+  text-align: center
+}
