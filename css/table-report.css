@@ -1,15 +1,16 @@
 .report {
   color: #555555;
-  font-size: 16px;
+  font-size: 12pt;
+  margin-bottom: 30px;
 }
-
-thead {
-  display: table-header-group;
-  /* h5bp.com/t */
+table {
+  border-collapse: collapse;
+  font-size: 1em;
+  color: #555;
+  width: 69%;
 }
-
-tr {
-  page-break-inside: avoid;
+th, td {
+  padding: 5px;
 }
 
 .case_table td {
