@@ -22,7 +22,9 @@
 .case-2 {
   margin-top: 48px;
 }
-
+.name {
+  font-weight: 600;
+}
 
 .prod2,
 .prod1 {

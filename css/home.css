@@ -1,3 +1,56 @@
+@import url('../fonts/Century Gothic.ttf');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+body {
+  line-height: 1.4;
+}
+
+a {
+  text-decoration: none;
+}
+
+.blue {
+  background: #00a0c6;
+  height: 30px;
+}
+
+.heading {
+  background: #ffbf00;
+  margin: 0;
+  font-size: 40pt;
+  color: black;
+  padding-left: 230px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.logo {
+  background-image: url('../img/logo.png');
+  cursor: pointer;
+  width: 183px;
+  height: 150px;
+  margin-top: -100px;
+  margin-left: 30px;
+  background-repeat: no-repeat;
+
+}
+
+.heading .title {
+  margin: 0;
+  background: #ffbf00;
+  font-size: 40pt;
+  color: black;
+  padding-left: 230px;
+  font-weight: bold;
+  cursor: pointer;
+
+
+}
+
 .boxes {
   display: flex;
   flex-wrap: wrap;
@@ -34,7 +87,7 @@
   font-size: 20pt;
 }
 
-.boxes .box p {
+.boxes .box  p {
   font-size: 10pt;
 }
 
