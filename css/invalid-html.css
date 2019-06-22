@@ -1,0 +1,30 @@
+.invalid .title {
+  font-weight: normal;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 53px;
+  color: #222222;
+  text-transform: uppercase;
+}
+
+.invalid {
+  color: #555555;
+  font-size: 16px;
+}
+
+.invalid_list {
+  color: #222222;
+}
+
+.invalid_list>div {
+  font-family: Courier, "Courier New", monospace;
+  font-size: 18pt;
+  background-color: #ddd;
+  margin: 5px;
+  padding: 5px;
+  max-width: 300px;
+}
+
+.link {
+  text-decoration: underline;
+}
