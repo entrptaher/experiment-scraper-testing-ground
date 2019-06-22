@@ -1,0 +1,48 @@
+.captcha {
+  color: #555555;
+  font-size: 16px;
+}
+
+.captcha a {
+  text-decoration: underline;
+}
+
+.success {
+  color: green;
+}
+
+.captcha_img {
+  height: 80px;
+  width: 215px;
+}
+
+.submit {
+  padding: 8px;
+}
+
+.bgSlider {
+  width: 252px;
+  height: 37px;
+  float: left;
+  border: 1px solid #040404;
+  background-color: #101010
+}
+
+.clr {
+  clear: both;
+}
+
+.dropError {
+  color: #bb2828;
+  font-size: 10px;
+}
+
+.Slider {
+  width: 52px;
+  height: 37px;
+  background: transparent url(../img/bg_draggable_qaptcha.jpg) no-repeat;
+  cursor: e-resize;
+  position: relative;
+  top: 0;
+  left: 0;
+}

@@ -19,3 +19,8 @@ input {
   color: #222222;
   padding: 10px;
 }
+
+.login_part {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}

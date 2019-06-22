@@ -24,6 +24,10 @@ a {
   height: 30px;
 }
 
+.black {
+  color: black;
+}
+
 .heading {
   background: #ffbf00;
   margin: 0;
@@ -69,6 +73,18 @@ a {
 
 .mb-12 {
   margin-bottom: 12px;
+}
+
+.mt-36 {
+  margin-top: 36px;
+}
+
+.mt-48 {
+  margin-top: 48px;
+}
+
+.mb-48 {
+  margin-bottom: 48px;
 }
 
 .title {
