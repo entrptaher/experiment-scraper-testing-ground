@@ -1,0 +1,31 @@
+.heading-modified {
+  background: #f2eb3e;
+  margin: 0;
+  font-size: 40pt;
+  color: black;
+  padding-left: 230px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.msg-error {
+  color: #c65848;
+}
+
+.g-recaptcha.error {
+  border: solid 2px #c64848;
+  padding: 0.2em;
+  width: 19em;
+}
+
+.submit {
+  padding: 8px;
+  margin-bottom: 58px;
+}
+
+.btn {
+  background: #00a0c6;
+  padding: 10px;
+  color: #fff;
+  border-radius: 5px;
+}
