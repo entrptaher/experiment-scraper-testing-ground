@@ -3,16 +3,6 @@
   font-size: 16px;
 }
 
-.report .title {
-  font-weight: normal;
-  margin-top: 10px;
-  margin-bottom: 5px;
-  font-size: 53px;
-  color: #222222;
-}
-
-
-
 thead {
   display: table-header-group;
   /* h5bp.com/t */

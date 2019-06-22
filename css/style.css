@@ -70,3 +70,12 @@ a {
 .mb-12 {
   margin-bottom: 12px;
 }
+
+.title {
+  font-weight: normal;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 53px;
+  color: #222222;
+  text-transform: uppercase;
+}

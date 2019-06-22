@@ -1,0 +1,18 @@
+.ajax {
+  color: #555555;
+  font-size: 16px;
+}
+
+.ajax a {
+  text-decoration: underline;
+}
+
+.my_border {
+  display: inline-block;
+  border: 1px dotted #aaa;
+  padding-left: 50px;
+  padding-right: 195px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-left: 15px;
+}

@@ -1,0 +1,21 @@
+.login {
+  color: #555555;
+  font-size: 16px;
+}
+
+.success {
+  color: green;
+}
+
+.error {
+  color: red;
+}
+
+.title_color {
+  color: #222222;
+}
+
+input {
+  color: #222222;
+  padding: 10px;
+}
