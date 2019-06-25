@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Document</title>
+		<link rel="stylesheet" href="../css/style.css" />
+		<link rel="stylesheet" href="../css/blocks.css" />
+	</head>
+	<body>
+		<div class="nav">
+			<div class="top"></div>
+			<a href="">
+				<h1 class="title">web scrapper testing ground</h1>
+				<div class="img"></div>
+			</a>
+		</div>
+
+		<div class="wrapper block">
+			<h1 class="title mb-16">
+				BLOCKS: Price List (version 5)
+			</h1>
+			<p class="mb-16">
+				In this test, the web scraper needs to scrape a price list organized in
+				a block layout. Specifically, it has to:
+			</p>
+			<ol class="list mb-16">
+				<li>
+					Extract all the products (their names, descriptions and prices), while
+					skipping advertisements
+				</li>
+				<li>Scrape discounted products only</li>
+				<li>Scrape products with red prices only</li>
+			</ol>
+			<p class="mb-16">
+				There is a <b>ver</b> parameter (which varies from 1 to 5) to show
+				different table versions (with different product numbers, best price and
+				advertisement positions).
+			</p>
+
+			<p class="mb-16">Also there are two tables presented:</p>
+			<ul class="list mb-16">
+				<li>
+					<b>Case 1</b> (simple one, with products and prices placed into the
+					same block)
+				</li>
+				<li>
+					<b>Case 2</b> (complicated one, with products and prices placed into
+					separate blocks)
+				</li>
+			</ul>
+
+			<p class="mb-16">
+				For testing, you may use the following sample links. The scraper should
+				sufficiently scrape all data from a certain case using the same project:
+			</p>
+
+			<ul class="list mb-16">
+				<a href="../blocks/block1.html"><li>Price List 1</li></a>
+				<a href="../blocks/block2.html"><li>Price List 2</li></a>
+				<a href="../blocks/block3.html"><li>Price List 3</li></a>
+				<a href="../blocks/block4.html"><li>Price List 4</li></a>
+				<a href="../blocks/block5.html"><li>Price List 5</li></a>
+			</ul>
+			<div class="cases">
+				<div class="case-1">
+					<h3 class="mt-32">CASE 1</h3>
+					<table>
+						<thead>
+							<tr class="gray">
+								<th colspan="21">
+									Dell Latitude D610-1.73 Laptop Wireless Computer
+								</th>
+								<th colspan="1">$239.95</th>
+							</tr>
+
+							<tr class="gray">
+								<th colspan="21">
+									2 GHz Intel Pentium M, 1 GB DDR2 SDRAM, 40 GB, Microsoft
+									Windows XP Professiona
+								</th>
+							</tr>
+
+							<tr class="white">
+								<th colspan="20">Samsung Chromebook (Wi-Fi, 11.6-Inch)</th>
+								<th class="best" rowspan="2">Best Price!</th>
+								<th class="best">$249.00</th>
+							</tr>
+
+							<tr>
+								<th>1.7 GHz, 2 GB DDR3 SDRAM, 16 GB, Chrome</th>
+							</tr>
+
+							<tr>
+								<th class="center bg" colspan="22">ADVERTISEMENT</th>
+							</tr>
+
+							<tr class="gray">
+								<th colspan="21">
+									Apple MacBook Pro MD101LL/A 13.3-Inch Laptop (NEWEST VERSION)
+								</th>
+								<th colspan="1">$1,099.99</th>
+							</tr>
+
+							<tr class="gray">
+								<th colspan="21">
+									2.5 GHz Intel Core i5, 4 GB DDR3 SDRAM, 500 GB Serial ATA, Mac
+									OS X v10.7 Lion
+								</th>
+							</tr>
+
+							<tr class="white">
+								<th colspan="20">
+									Acer Aspire AS5750Z-4835 15.6-Inch Laptop (Black)
+								</th>
+								<th class="best" rowspan="2">Best Price!</th>
+								<th class="best">$385.72</th>
+							</tr>
+
+							<tr>
+								<th>
+									2 GHz Pentium B940, 4 GB SDRAM, 500 GB, Windows 7 Home Premium
+									64-bit
+								</th>
+							</tr>
+
+							<tr>
+								<th class="center bg" colspan="22">ADVERTISEMENT</th>
+							</tr>
+
+							<tr>
+								<th colspan="21">
+									HP Pavilion g7-2010nr 17.3-Inch Laptop (Black)
+								</th>
+								<th>$549.99</th>
+							</tr>
+
+							<tr>
+								<th colspan="21">
+									2.3 GHz Core i3-2350M, 6 GB SDRAM, 640 GB, Windows 7 Home
+									Premium 64-bit
+								</th>
+
+								<th class="discount">
+									discount 7%
+								</th>
+							</tr>
+
+							<tr>
+								<th colspan="21">ASUS A53Z-AS61 15.6-Inch Laptop (Mocha)</th>
+								<th>$399.99</th>
+							</tr>
+
+							<tr>
+								<th colspan="21"></th>
+							</tr>
+						</thead>
+					</table>
+					<h3 class="mt-32">CASE 2</h3>
+					<table>
+						<thead>
+							<tr class="gray">
+								<th colspan="21">
+									Dell Latitude D610-1.73 Laptop Wireless Computer
+								</th>
+								<th colspan="1">$239.95</th>
+							</tr>
+
+							<tr class="gray">
+								<th colspan="21">
+									2 GHz Intel Pentium M, 1 GB DDR2 SDRAM, 40 GB, Microsoft
+									Windows XP Professiona
+								</th>
+							</tr>
+
+							<tr class="white">
+								<th colspan="20">Samsung Chromebook (Wi-Fi, 11.6-Inch)</th>
+								<th class="best" rowspan="2">Best Price!</th>
+								<th class="best">$249.00</th>
+							</tr>
+
+							<tr>
+								<th>1.7 GHz, 2 GB DDR3 SDRAM, 16 GB, Chrome</th>
+							</tr>
+
+							<tr>
+								<th class="center bg" colspan="22">ADVERTISEMENT</th>
+							</tr>
+
+							<tr class="gray">
+								<th colspan="21">
+									Apple MacBook Pro MD101LL/A 13.3-Inch Laptop (NEWEST VERSION)
+								</th>
+								<th colspan="1">$1,099.99</th>
+							</tr>
+
+							<tr class="gray">
+								<th colspan="21">
+									2.5 GHz Intel Core i5, 4 GB DDR3 SDRAM, 500 GB Serial ATA, Mac
+									OS X v10.7 Lion
+								</th>
+							</tr>
+
+							<tr class="white">
+								<th colspan="20">
+									Acer Aspire AS5750Z-4835 15.6-Inch Laptop (Black)
+								</th>
+								<th class="best" rowspan="2">Best Price!</th>
+								<th class="best">$385.72</th>
+							</tr>
+
+							<tr>
+								<th>
+									2 GHz Pentium B940, 4 GB SDRAM, 500 GB, Windows 7 Home Premium
+									64-bit
+								</th>
+							</tr>
+
+							<tr>
+								<th class="center bg" colspan="22">ADVERTISEMENT</th>
+							</tr>
+
+							<tr>
+								<th colspan="21">
+									HP Pavilion g7-2010nr 17.3-Inch Laptop (Black)
+								</th>
+								<th>$549.99</th>
+							</tr>
+
+							<tr>
+								<th colspan="21">
+									2.3 GHz Core i3-2350M, 6 GB SDRAM, 640 GB, Windows 7 Home
+									Premium 64-bit
+								</th>
+
+								<th class="discount">
+									discount 7%
+								</th>
+							</tr>
+
+							<tr>
+								<th colspan="21">ASUS A53Z-AS61 15.6-Inch Laptop (Mocha)</th>
+								<th>$399.99</th>
+							</tr>
+
+							<tr>
+								<th colspan="21"></th>
+							</tr>
+						</thead>
+					</table>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

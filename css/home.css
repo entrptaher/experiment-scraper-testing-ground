@@ -45,7 +45,7 @@
 }
 
 
-.item:hover a {
+.item:hover h3 {
   color: black;
 }
 

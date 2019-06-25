@@ -1,0 +1,46 @@
+.block {
+  color: #555;
+}
+
+table {
+
+  margin-top: 3rem;
+  border-collapse: collapse;
+  border-spacing: 0;
+  display: table;
+  background: #E1E1E1;
+
+
+}
+
+table th {
+  /* border: 5px solid greenyellow; */
+  padding: 0.25rem;
+}
+
+.best {
+  width: 50px;
+  color: red;
+}
+
+.discount {
+  font-size: 10px;
+}
+
+.gray {
+  background-color: #E1E1E1;
+}
+
+.white {
+  background-color: #F5F5F5;
+}
+
+.center {
+  text-align: center;
+}
+
+.bg {
+  background-color: #FF9800;
+  color: white;
+  font-size: 1.5rem;
+}

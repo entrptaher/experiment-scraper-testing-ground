@@ -23,6 +23,7 @@ a {
   text-align: center;
   padding: 0.75rem;
   text-transform: uppercase;
+  line-height: 1.5;
 }
 
 .img {
@@ -52,6 +53,21 @@ a {
   margin-bottom: 1rem;
 }
 
+.mt-32 {
+  margin-top: 4rem;
+}
+
 .list {
   margin-left: 3rem;
+}
+
+.list a {
+  text-decoration: underline;
+}
+
+.wrapper .title {
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: normal;
+  color: #333;
 }
