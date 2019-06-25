@@ -1,0 +1,62 @@
+.wrapper .title {
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: normal;
+  color: #333;
+}
+
+.table-report {
+  color: #555;
+}
+
+
+
+.list a {
+  text-decoration: underline;
+}
+
+.table {
+  margin-top: 3rem;
+  border-collapse: collapse;
+  border-spacing: 0;
+  display: table;
+
+}
+
+
+.table th {
+  border: 1px solid grey;
+  padding: .75rem;
+  /* border-bottom: 1px solid #dddddd; */
+  background: #333;
+  text-align: center;
+  color: white;
+  width: 150px;
+
+}
+
+.table td {
+  width: 150px;
+  padding: .75rem;
+  border: 1px solid grey;
+  text-align: right;
+}
+
+.center {
+
+  text-align: center !important;
+
+}
+
+.pink {
+  background: pink;
+}
+
+.bg {
+  background-color: #eee;
+  height: 3px;
+}
+
+.color {
+  background-color: #eee;
+}

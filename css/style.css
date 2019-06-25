@@ -38,3 +38,20 @@ a {
 
   margin-left: 40px;
 }
+
+.wrapper {
+  margin-top: 2.5rem;
+  margin-left: 40px;
+}
+
+.mt-12 {
+  margin-top: 12px;
+}
+
+.mb-16 {
+  margin-bottom: 1rem;
+}
+
+.list {
+  margin-left: 3rem;
+}
