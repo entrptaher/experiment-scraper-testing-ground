@@ -1,57 +1,4 @@
-@import url('../fonts/Century Gothic.ttf');
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
-}
-body {
-  line-height: 1.4;
-}
-
-a {
-  text-decoration: none;
-}
-
-.blue {
-  background: #00a0c6;
-  height: 30px;
-}
-
-.heading {
-  background: #ffbf00;
-  margin: 0;
-  font-size: 40pt;
-  color: black;
-  padding-left: 230px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.logo {
-  background-image: url('../img/logo.png');
-  cursor: pointer;
-  width: 183px;
-  height: 150px;
-  margin-top: -100px;
-  margin-left: 30px;
-  background-repeat: no-repeat;
-
-}
-
-.heading .title {
-  margin: 0;
-  background: #ffbf00;
-  font-size: 40pt;
-  color: black;
-  padding-left: 230px;
-  font-weight: bold;
-  cursor: pointer;
-
-
-}
-
-.boxes {
+.items {
   display: flex;
   flex-wrap: wrap;
   width: 1260px;
@@ -61,13 +8,11 @@ a {
 
 }
 
+.item,
+.blur {
 
-.boxes .box,
-.boxes .blur {
-  cursor: pointer;
-  /* padding: 30px; */
   width: 394px;
-  height: 109px;
+  height: 100px;
   background: #00a0c6;
   margin: 10px;
   text-align: center;
@@ -76,36 +21,34 @@ a {
   line-height: 11.5pt;
 }
 
-.boxes .blur {
+.blur {
   opacity: 0.2;
 }
 
-
-.boxes .box a,
-.boxes .blur a {
-  color: white;
-  font-size: 20pt;
+.item h3,
+.blur h3 {
+  color: #fff;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 400;
 }
 
-.boxes .box  p {
-  font-size: 10pt;
-}
-
-.boxes .box p {
-  color: #cccccc;
-  padding-top: 1rem;
-
+.item p,
+.blur p {
+  color: #bdc3c7;
+  font-size: 0.9rem
 }
 
 
-.boxes .box:hover {
-  background: #ffbf00;
+.item:hover {
+  background-color: #ffbf00;
 }
 
-.boxes .box:hover a {
+
+.item:hover a {
   color: black;
 }
 
-.boxes .box:hover p {
+.item:hover p {
   color: #333;
 }

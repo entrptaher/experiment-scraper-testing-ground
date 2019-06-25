@@ -7,99 +7,34 @@
   font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
 }
 
-body {
-  line-height: 1.4;
-}
-
 a {
   text-decoration: none;
 }
 
-.container {
-  margin-left: 25px;
+.nav .top {
+  height: 2rem;
+  background: #3498db;
 }
 
-.blue {
-  background: #00a0c6;
-  height: 30px;
-}
-
-.black {
-  color: black;
-}
-
-.heading {
-  background: #ffbf00;
-  margin: 0;
-  font-size: 40pt;
-  color: black;
-  padding-left: 230px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.header a {
-  text-decoration: none;
-}
-
-.logo {
-  background-image: url('../img/logo.png');
-  cursor: pointer;
-  width: 183px;
-  height: 150px;
-  margin-top: -100px;
-  margin-left: 30px;
-  background-repeat: no-repeat;
-
-}
-
-.case {
-  margin-bottom: 12px;
-}
-
-.list {
-  margin-left: 55px;
-  margin-bottom: 20px;
-}
-
-.list a {
-  text-decoration: underline;
-}
-
-.test {
-  margin-top: 25px;
-  margin-bottom: 12px;
-}
-
-.mb-12 {
-  margin-bottom: 12px;
-}
-
-.mb-24 {
-  margin-bottom: 24px;
-}
-
-.mt-12 {
-  margin-top: 12px;
-}
-
-.mt-36 {
-  margin-top: 36px;
-}
-
-.mt-48 {
-  margin-top: 48px;
-}
-
-.mb-48 {
-  margin-bottom: 48px;
-}
-
-.title {
-  font-weight: normal;
-  margin-top: 10px;
-  margin-bottom: 5px;
-  font-size: 53px;
+.nav .title {
+  background: #f1c40f;
+  font-size: 3rem;
   color: #222222;
+  text-align: center;
+  padding: 0.75rem;
   text-transform: uppercase;
+}
+
+.img {
+  background-image: url('../img/logo3.png');
+  height: 190px;
+  width: 200px;
+  margin-top: -125px;
+  margin-left: 40px;
+
+}
+
+.container {
+
+  margin-left: 40px;
 }
