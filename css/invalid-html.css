@@ -1,0 +1,15 @@
+.invalid {
+  color: #555;
+}
+
+.invalid-data {
+  margin-left: 3rem;
+  width: 400px;
+}
+
+.child-data {
+  font-size: 1.4rem;
+  border: 1px solid grey;
+  padding: 5px;
+  background: #ddd;
+}
