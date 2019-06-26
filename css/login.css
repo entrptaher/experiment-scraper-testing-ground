@@ -1,0 +1,27 @@
+.login {
+  color: #555;
+}
+
+.success {
+  color: green;
+}
+
+.danger {
+  color: red;
+}
+
+.line {
+  margin-top: 2rem;
+}
+
+.login-form {
+  margin-top: 20px;
+}
+
+.input {
+  padding: 0.25rem;
+}
+
+input[type="submit"] {
+  padding: 0.5rem;
+}
