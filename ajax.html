@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>AJAX</title>
+		<link rel="stylesheet" href="./css/style.css" />
+		<link rel="stylesheet" href="./css/ajax.css" />
+	</head>
+	<body>
+		<div class="nav">
+			<div class="top"></div>
+			<a href="">
+				<h1 class="title">web scrapper testing ground</h1>
+				<div class="img"></div>
+			</a>
+		</div>
+
+		<div class="wrapper">
+			<div class="ajax">
+				<h1 class="title mb-16">AJAX</h1>
+				<p class="mb-16">
+					Today many websites load their content using
+					<a href="https://en.wikipedia.org/wiki/Ajax_(programming)">AJAX</a
+					>(Asynchronus JavaScript and XML). This often greatly improves user
+					experience but also may become a stumbling block for some web
+					scrapers. At the same time a good web scraer should be able to parse
+					all major data formats that are used in AJAX technology:
+					<a href="https://en.wikipedia.org/wiki/HTML">HTML</a>,
+					<a href="https://en.wikipedia.org/wiki/XML">XML</a> and
+					<a href="https://en.wikipedia.org/wiki/JSON">JSON</a>
+				</p>
+
+				<p class="mb-16">
+					You may use this test to check scraper's ability to:
+				</p>
+
+				<ol class="list mb-16">
+					<li>Receive HTML via AJAX and parse it</li>
+					<li>Receive XML via AJAX and parse it</li>
+					<li>Receive JSON via AJAX and parse it</li>
+				</ol>
+
+				<p class="mb-16">How does it work:</p>
+				<ul class="list mb-16">
+					<li>
+						The browser receives three lists of three names through AJAX in
+						three different formats: HTML, XML and JSON
+					</li>
+					<li>HTML data is received automatically as the page is loaded</li>
+					<li>
+						To receive XML and JSON data you need to click to a corresponding
+						link
+					</li>
+					<li>The scraper should be able to extract all nine names</li>
+				</ul>
+
+				<hr class="line" />
+
+				<div class="html mb-32">
+					<h4 class="mb-16">HTML</h4>
+					<ul class="list">
+						<li>TOM</li>
+						<li>Andrew</li>
+						<li>Bob</li>
+					</ul>
+				</div>
+
+				<div class="xml mb-32">
+					<h4 class="mb-16">XML</h4>
+					<ul class="list">
+						<li>Justin</li>
+						<li>Rebecca</li>
+						<li>Stephen</li>
+					</ul>
+				</div>
+
+				<div class="json mb-32">
+					<h4 class="mb-16">JSON</h4>
+					<ul class="list">
+						<li>George</li>
+						<li>Eric</li>
+						<li>Alice</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

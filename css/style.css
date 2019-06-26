@@ -74,6 +74,10 @@ a {
   text-decoration: underline;
 }
 
+.wrapper {
+  line-height: 1.5;
+}
+
 .wrapper .title {
   text-transform: uppercase;
   font-size: 3rem;
