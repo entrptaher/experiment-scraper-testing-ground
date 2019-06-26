@@ -1,18 +1,28 @@
-.tests {
-  color: #555555;
-  font-size: 16px;
+.text-list {
+  color: #555;
 }
 
-.tests .title {
-  font-weight: normal;
-  margin-top: 10px;
-  margin-bottom: 5px;
-  font-size: 53px;
-  color: #222222;
-}
-
-.case_textlist {
+.population {
   font-family: Courier, "Courier New", monospace;
-  font-size: 18pt;
+  width: 400px;
+  display: flex;
   color: black;
+  justify-content: space-between;
+}
+
+.child {
+  font-size: 1.5rem;
+  margin-top: 8px;
+
+}
+
+
+.hr {
+  width: 400px;
+  display: inline-block;
+  border-top: 2px dashed black;
+}
+
+.space {
+  letter-spacing: 2px;
 }
