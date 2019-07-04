@@ -1,0 +1,28 @@
+.container {
+
+  margin-left: 40px;
+  margin-top: 30px;
+}
+
+.recaptcha {
+  color: #555;
+}
+
+.line {
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+input[type="submit"] {
+  padding: 0.5rem;
+  cursor: not-allowed;
+}
+
+.button {
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.area {
+  margin-bottom: 1rem;
+}

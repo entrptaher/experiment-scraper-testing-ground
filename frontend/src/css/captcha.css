@@ -1,0 +1,12 @@
+.captcha {
+  color: #555;
+}
+
+.success {
+  color: green;
+}
+
+.line {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
