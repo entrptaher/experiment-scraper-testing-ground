@@ -15,7 +15,7 @@ router.get('/', (req, res) => {
 	res.json({ msg: 'Ok' });
 });
 
-router.post('/subscribe', catchErrors(recaptchaChecker));
+router.post('/subscribe', recaptchaChecker);
 
 router.get('/ip', getIp);
 

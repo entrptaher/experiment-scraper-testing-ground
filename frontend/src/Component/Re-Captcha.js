@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import ReCAPTCHA from 'react-google-recaptcha';
+import { toast } from 'react-toastify';
 import '../css/style.css';
 import '../css/recaptcha.css';
+import 'react-toastify/dist/ReactToastify.css';
 
 class ReCaptcha extends Component {
 	state = {
@@ -29,7 +31,11 @@ class ReCaptcha extends Component {
 			.then(res => res.json())
 			.then(data => {
 				console.log(data);
-				alert(data.msg);
+				if (data.success) {
+					toast.success(data.msg);
+				} else {
+					toast.error(data.msg);
+				}
 			});
 	};
 

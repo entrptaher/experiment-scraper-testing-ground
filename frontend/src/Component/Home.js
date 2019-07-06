@@ -27,7 +27,7 @@ class Home extends Component {
 						<p>list of items organized as a simple text</p>
 					</div>
 					<div className="item">
-						<Link to="/invalidhtml">
+						<Link to="/invalid">
 							<h3>INVALID HTML</h3>
 						</Link>
 						<p>HTML with markup errors</p>
