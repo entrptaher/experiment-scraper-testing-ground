@@ -98,6 +98,8 @@ export default class Ajax extends Component {
 						className="case"
 						dangerouslySetInnerHTML={{ __html: html }}
 					/>
+					<br />
+					<br />
 					<h4 className="mb-16">XML</h4>
 					<div id="ajaxXml" className="case html">
 						<Link to="#" onClick={() => this.getData('xml')}>
@@ -105,7 +107,8 @@ export default class Ajax extends Component {
 						</Link>
 						<div className="test" dangerouslySetInnerHTML={{ __html: xml }} />
 					</div>
-
+					<br />
+					<br />
 					<h4 className="mb-16">JSON</h4>
 					<div id="ajaxJson" className="case json">
 						<Link to="#" onClick={() => this.getData('json')}>
