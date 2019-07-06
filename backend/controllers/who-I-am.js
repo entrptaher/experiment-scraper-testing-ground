@@ -18,5 +18,5 @@ exports.getUserAgent = (req, res) => {
 };
 
 exports.getCookies = (req, res) => {
-	return res.json({ msg: req.cookies });
+	return res.json({ msg: req.cookies.token });
 };
