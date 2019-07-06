@@ -1,11 +1,11 @@
 import React from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
 
-import Recaptcha from './component/Re-Captcha';
-import Home from './component/Home';
-import Navbar from './component/Nav-bar';
-import TableReport from './component/Table-Report';
-import Ajax from './component/Ajax';
+import Recaptcha from './Component/Re-Captcha';
+import Home from './Component/Home';
+import Navbar from './Component/Nav-bar';
+import TableReport from './Component/Table-Report';
+import Ajax from './Component/Ajax';
 
 import './css/style.css';
 
