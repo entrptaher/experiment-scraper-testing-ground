@@ -66,7 +66,7 @@ const ajax = async (req, res) => {
       res.json(data);
       break;
     default:
-      return res.json({ message: 'Please select a modle you want to fetch' });
+      return res.json({ message: 'Please select a mode you want to fetch' });
       break;
   }
 };
