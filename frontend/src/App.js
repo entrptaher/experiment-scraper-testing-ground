@@ -1,16 +1,13 @@
 import React from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
-<<<<<<< HEAD
+
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-=======
->>>>>>> ajax-tab
 
 import Recaptcha from './Component/Re-Captcha';
 import Home from './Component/Home';
 import Navbar from './Component/Nav-bar';
 import TableReport from './Component/Table-Report';
-<<<<<<< HEAD
 import Table1 from './Component/Table/Table1';
 import Table2 from './Component/Table/Table2';
 import Table3 from './Component/Table/Table3';
@@ -29,10 +26,8 @@ import TextList5 from './Component/Text-List/Text-List5';
 import InvalidHtml from './Component/Invalid-Html';
 import Login from './Component/Login';
 import WhoAmI from './Component/Who-I-Am';
-=======
 import Ajax from './Component/Ajax';
 
->>>>>>> ajax-tab
 import './css/style.css';
 
 function App() {
@@ -73,12 +68,12 @@ function App() {
 				<Route path="/invalid" component={InvalidHtml} />
 
 				<Route path="/recaptcha" component={Recaptcha} />
-<<<<<<< HEAD
+
 				<Route path="/login" component={Login} />
 				<Route path="/whoami" component={WhoAmI} />
-=======
+
 				<Route path="/ajax" component={Ajax} />
->>>>>>> ajax-tab
+
 			</div>
 		</BrowserRouter>
 	);

@@ -17,7 +17,4 @@ const recaptchaChecker = (req, res) => {
 	});
 };
 
-<<<<<<< HEAD
 module.exports = { recaptchaChecker };
-=======
->>>>>>> ajax-tab
