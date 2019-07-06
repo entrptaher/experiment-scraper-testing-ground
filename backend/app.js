@@ -2,6 +2,8 @@ const express = require('express');
 const path = require('path');
 const cors = require('cors');
 const doenv = require('dotenv');
+const useragent = require('express-useragent');
+var cookieParser = require('cookie-parser');
 const router = require('./routes/index');
 const errorHandlers = require('./handlers/errorHandler');
 
@@ -16,6 +18,8 @@ app.use(express.urlencoded({ extended: false }));
 
 app.use(cors());
 
+app.use(cookieParser());
+app.use(useragent.express());
 app.use('/', router);
 
 // If that above routes didnt work, we 404 them and forward to error handler

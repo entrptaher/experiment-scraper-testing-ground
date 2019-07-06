@@ -22,6 +22,14 @@
   padding: 0.25rem;
 }
 
-input[type="submit"] {
+.submit {
   padding: 0.5rem;
+}
+
+.line {
+  margin-top: 2rem;
+}
+
+.info {
+  margin-top: -1rem;
 }
