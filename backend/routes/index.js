@@ -1,5 +1,5 @@
 const express = require('express');
-const { recaptchaChecker } = require('../controllers/captcha-controller');
+const { recaptchaChecker, ajax } = require('../controllers');
 
 const router = express.Router();
 
@@ -12,5 +12,6 @@ router.get('/', (req, res) => {
 // });
 
 router.post('/subscribe', recaptchaChecker);
+router.get('/ajax', ajax);
 
 module.exports = router;

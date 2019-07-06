@@ -1,10 +1,28 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import axios from 'axios';
 
 import '../css/ajax.css';
 
 export default class Ajax extends Component {
+  state = {
+    html: '',
+    xml: '',
+    json: ''
+  };
+  componentDidMount() {
+    this.fetchData('html');
+  }
+  getData = mode => {
+    this.fetchData(mode);
+  };
+  fetchData = mode => {
+    axios
+      .get(`/ajax?mode=${mode}`)
+      .then(res => this.setState({ [mode]: res.data }));
+  };
   render() {
+    const { html, xml, json } = this.state;
     return (
       <div>
         <div id="content">
@@ -72,14 +90,30 @@ export default class Ajax extends Component {
 
         <div id="case_ajax">
           <h3>HTML</h3>
-          <div id="ajaxHtml" className="case" />
+          <div
+            id="ajaxHtml"
+            className="case"
+            dangerouslySetInnerHTML={{ __html: html }}
+          />
           <h3>XML</h3>
           <div id="ajaxXml" className="case">
-            <Link to="#">Click to get XML through AJAX</Link>
+            <Link to="#" onClick={() => this.getData('xml')}>
+              Click to get XML through AJAX
+            </Link>
+            <div dangerouslySetInnerHTML={{ __html: xml }} />
           </div>
           <h3>JSON</h3>
           <div id="ajaxJson" className="case">
-            <Link to="#">Click to get JSON through AJAX</Link>
+            <Link to="#" onClick={() => this.getData('json')}>
+              Click to get JSON through AJAX
+            </Link>
+            <div>
+              <ul>
+                {json.length
+                  ? json.map((e, i) => <li key={i}>{e.name}</li>)
+                  : ''}
+              </ul>
+            </div>
           </div>
         </div>
       </div>
