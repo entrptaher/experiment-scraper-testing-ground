@@ -1,5 +1,6 @@
 const express = require('express');
 const { recaptchaChecker } = require('../controllers/captcha-controller');
+<<<<<<< HEAD
 const {
 	getIp,
 	getHost,
@@ -8,6 +9,9 @@ const {
 	getCookies
 } = require('../controllers/who-I-am');
 const { catchErrors } = require('../handlers/errorHandler');
+=======
+const { ajax } = require('../controllers/ajaxController');
+>>>>>>> ajax-tab
 
 const router = express.Router();
 
@@ -16,6 +20,7 @@ router.get('/', (req, res) => {
 });
 
 router.post('/subscribe', recaptchaChecker);
+router.get('/ajax', ajax);
 
 router.get('/ip', getIp);
 
