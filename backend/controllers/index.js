@@ -31,18 +31,19 @@ exports.ajax = async (req, res) => {
 };
 
 exports.recaptchaChecker = (req, res) => {
-  const { captcha } = req.body;
-  if (captcha === undefined || captcha === '' || captcha === null) {
+  const {
+    captcha,
+    connection: { remoteAddress },
+  } = req.body;
+  if (!captcha) {
     return res.json({ success: false, msg: 'Please Select Captcha' });
   }
   const secretKey = process.env.SECRET_KEY;
-  const URL = `https://google.com/recaptcha/api/siteverify?secret=${secretKey}&response=${captcha}&remoteip=${
-    req.connection.remoteAddress
-  }`;
+  const URL = `https://google.com/recaptcha/api/siteverify?secret=${secretKey}&response=${captcha}&remoteip=${remoteAddress}`;
 
   return request(URL, (err, response, body) => {
-    const parsedBody = JSON.parse(body);
-    if (parsedBody.success !== undefined && !parsedBody.success) {
+    const { success } = JSON.parse(body);
+    if (success) {
       return res.json({ success: false, msg: 'Failed captcha verification' });
     }
     return res.json({ success: true, msg: 'Captcha passed' });
@@ -50,12 +51,19 @@ exports.recaptchaChecker = (req, res) => {
 };
 
 exports.getInfo = (req, res) => {
-  const ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
+  const {
+    connection: { remoteAddress },
+    headers,
+    hostname,
+    useragent: { source },
+    cookies,
+  } = req;
+  const ip = headers['x-forwarded-for'] || remoteAddress;
   return res.json({
     ip,
-    hostname: req.hostname,
-    referer: req.headers.host,
-    agent: req.useragent.source,
-    cookies: req.cookies,
+    hostname,
+    referer: headers.host,
+    agent: source,
+    cookies,
   });
 };

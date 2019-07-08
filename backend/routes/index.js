@@ -3,10 +3,7 @@ const express = require('express');
 const router = express.Router();
 const { recaptchaChecker, getInfo, ajax } = require('../controllers');
 
-
-router.get('/', (req, res) => {
-  res.json({ msg: 'Ok' });
-});
+router.get('/', (req, res) => res.json({ msg: 'Ok' }));
 
 router.post('/subscribe', recaptchaChecker);
 

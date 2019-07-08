@@ -43,6 +43,6 @@ if (app.get('env') === 'development') {
   app.use(errorHandlers.developmentErrors);
 }
 
-app.listen(7777, () => {
+app.listen(process.env.PORT, () => {
   console.log('Server is listening on port 7777');
 });
