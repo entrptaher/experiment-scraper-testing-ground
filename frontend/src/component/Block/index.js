@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-class Block1 extends Component {
+class Block extends Component {
   state = {};
   render() {
     return (
       <div className="wrapper block">
-        <h1 className="title mb-16">BLOCKS: Price List (version 1)</h1>
+        <h1 className="title mb-16">BLOCKS: Price List</h1>
         <p className="mb-16">
           In this test, the web scraper needs to scrape a price list organized
           in a block layout. Specifically, it has to:
@@ -269,4 +269,4 @@ class Block1 extends Component {
   }
 }
 
-export default Block1;
+export default Block;

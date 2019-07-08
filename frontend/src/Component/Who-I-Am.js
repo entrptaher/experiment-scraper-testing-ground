@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import cookie from 'react-cookies';
 
-import '../css/who.css';
-
 class WhoIAm extends Component {
   state = {
     ip: '',
@@ -13,7 +11,7 @@ class WhoIAm extends Component {
   };
 
   componentDidMount() {
-    fetch('http://localhost:7777/userInfo')
+    fetch(`${process.env.REACT_APP_SERVER}/userInfo`)
       .then(res => res.json())
       .then(res =>
         this.setState({
@@ -26,8 +24,8 @@ class WhoIAm extends Component {
       );
   }
   render() {
-    const cookiesFor = Object.keys(cookie.loadAll());
-
+    const { ip, host, referer, agent, cookie } = this.state;
+    const cookiesFor = Object.keys(cookie);
     return (
       <div className="wrapper">
         <div className="who">
@@ -44,22 +42,22 @@ class WhoIAm extends Component {
 
           <div className="ip">
             <p className="small">IP</p>
-            <p className="black mb-16">{this.state.ip}</p>
+            <p className="black mb-16">{ip}</p>
           </div>
 
           <div className="host">
             <p className="small">HOST</p>
-            <p className="black mb-16">{this.state.host}</p>
+            <p className="black mb-16">{host}</p>
           </div>
 
           <div className="ref">
             <p className="small">REFERER</p>
-            <p className="black mb-16">{this.state.referer}</p>
+            <p className="black mb-16">{referer}</p>
           </div>
 
           <div className="agent">
             <p className="small">USER AGENT</p>
-            <p className="black mb-16">{this.state.agent}</p>
+            <p className="black mb-16">{agent}</p>
           </div>
 
           <div className="cookies">
@@ -67,7 +65,7 @@ class WhoIAm extends Component {
             <ul className="list black mb-16">
               {cookiesFor.map(cookieFor => (
                 <li key={cookieFor}>
-                  {cookieFor}: {this.state.cookie[cookieFor]}
+                  {cookieFor}: {cookie[cookieFor]}
                 </li>
               ))}
             </ul>

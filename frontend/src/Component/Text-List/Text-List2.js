@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import '../../css/style.css';
-import '../../css/text-list.css';
 
 class TextList2 extends Component {
 	state = {};
