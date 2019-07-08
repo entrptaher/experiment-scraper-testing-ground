@@ -64,12 +64,12 @@ class Login extends Component {
 							<b>Login</b>
 						</li>
 						<li>
-							If you see <span class="success">WELCOME</span> then the user
+							If you see <span className="success">WELCOME</span> then the user
 							credentials were sent, the cookie was passed and HTTP redirect was
 							processed
 						</li>
 						<li>
-							If you see <span class="danger">ACCESS DENIED!</span> then either
+							If you see <span className="danger">ACCESS DENIED!</span> then either
 							you entered wrong credentials or they were not sent to the server
 							properly
 						</li>

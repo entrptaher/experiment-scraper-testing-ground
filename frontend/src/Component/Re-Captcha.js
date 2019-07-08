@@ -19,7 +19,6 @@ class ReCaptcha extends Component {
 
 	sendRequest = e => {
 		const { captcha } = this.state;
-		// console.log('Ei mithu ami ekhane', captcha);
 		fetch('http://localhost:7777/subscribe', {
 			method: 'POST',
 			headers: {

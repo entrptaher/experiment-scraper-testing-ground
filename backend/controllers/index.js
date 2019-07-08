@@ -1,5 +1,4 @@
 const request = require('request');
-const crypto = require('crypto');
 
 exports.ajax = async (req, res) => {
   // Access the provided 'mode' query parameters
@@ -52,17 +51,6 @@ exports.recaptchaChecker = (req, res) => {
 
 exports.getInfo = (req, res) => {
   const ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
-  const hash = crypto
-    .createHash('md5')
-    .update('cookie')
-    .digest('hex');
-
-  res.cookie('auth', hash, { maxAge: 900000, httpOnly: false });
-  res.cookie('TestingGround', 'WebScraperTest', {
-    maxAge: 900000,
-    httpOnly: false,
-  });
-
   return res.json({
     ip,
     hostname: req.hostname,
