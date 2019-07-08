@@ -69,13 +69,13 @@ class InvalidHtml extends Component {
 
 					<div className="invalid-data">
 						<div className="child-data">2&gt;1 &amp; 1&lt;2</div>
-						<div className="child-data">nonHTML</div>
-						<div className="child-data">unclosed</div>
+						<div className="child-data">non<nonhtml>HTML</nonhtml></div>
+						<div><span<span>unclosed</span<span></div>
 						<div className="child-data">scrapetools.com</div>
 						<div className="child-data">millepah.com</div>
 						<div className="child-data">bad nesting</div>
 						<div className="child-data">проверка (windows-1251) wrong meta</div>
-						<div className="child-data">проверка (utf-8) wrong heade</div>
+						<div className="child-data">проверка (utf-8) wrong header</div>
 					</div>
 				</div>
 			</div>
