@@ -3,6 +3,10 @@ import '../css/invalid-html.css';
 
 class InvalidHtml extends Component {
 	state = {};
+
+	createMarkup = () => {
+		return { __html: 'First &middot; Second' };
+	};
 	render() {
 		return (
 			<div className="wrapper">
@@ -62,20 +66,56 @@ class InvalidHtml extends Component {
 						<li>millepah.com</li>
 						<li>bad nesting</li>
 						<li>проверка (windows-1251) wrong meta</li>
-						<li>проверка (utf-8) wrong heade</li>
+						<li>проверка (utf-8) wrong header</li>
 					</ul>
 
 					<h3 className="mb-16">Here is the invalid HTML itself:</h3>
 
 					<div className="invalid-data">
-						<div className="child-data">2&gt;1 &amp; 1&lt;2</div>
-						<div className="child-data">non<nonhtml>HTML</nonhtml></div>
-						<div className="child-data">unclosed</div>
-						<div className="child-data">scrapetools.com</div>
-						<div className="child-data">millepah.com</div>
-						<div className="child-data">bad nesting</div>
-						<div className="child-data">проверка (windows-1251) wrong meta</div>
-						<div className="child-data">проверка (utf-8) wrong header</div>
+						<div
+							className="child-data"
+							dangerouslySetInnerHTML={{ __html: '2>1 & 1<2' }}
+						/>
+						<div
+							className="child-data"
+							dangerouslySetInnerHTML={{ __html: 'non<nonhtml>HTML</nonhtml>' }}
+						/>
+						<div
+							className="child-data"
+							dangerouslySetInnerHTML={{
+								__html: `<span<span>unclosed</span<span>`
+							}}
+						/>
+
+						<div
+							className="child-data"
+							dangerouslySetInnerHTML={{
+								__html: `<a href="http://scrapetools.com'>scrapetools.com</a>" <="" span=""></a>
+								<a href="http://millepah.com">millepah.com</a>
+								`
+							}}
+						/>
+
+						<div
+							className="child-data"
+							dangerouslySetInnerHTML={{
+								__html: `<span>bad nesting</span>`
+							}}
+						/>
+
+						<div
+							className="child-data"
+							dangerouslySetInnerHTML={{
+								__html: `проверка (windows-1251) wrong meta`
+							}}
+						/>
+
+						<div
+							className="child-data"
+							dangerouslySetInnerHTML={{
+								__html: `РїСЂРѕРІРµСЂРєР° (utf-8) wrong header`
+							}}
+						/>
 					</div>
 				</div>
 			</div>
