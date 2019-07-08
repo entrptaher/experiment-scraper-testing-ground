@@ -1,7 +1,5 @@
 const express = require('express');
-const path = require('path');
 const cors = require('cors');
-const doenv = require('dotenv');
 const useragent = require('express-useragent');
 var cookieParser = require('cookie-parser');
 const router = require('./routes/index');
@@ -15,7 +13,6 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 // app.use(express.static(path.join(__dirname, 'public')));
-
 app.use(cors());
 
 app.use(cookieParser());
@@ -27,8 +24,8 @@ app.use(errorHandlers.notFound);
 
 // Otherwise this was a really bad error we didn't expect! Shoot eh
 if (app.get('env') === 'development') {
-	/* Development Error Handler - Prints stack trace */
-	app.use(errorHandlers.developmentErrors);
+  /* Development Error Handler - Prints stack trace */
+  app.use(errorHandlers.developmentErrors);
 }
 
 // app.get('/', (req, res) => {
@@ -55,5 +52,5 @@ if (app.get('env') === 'development') {
 // });
 
 app.listen(7777, () => {
-	console.log('Server is listening on port 7777');
+  console.log('Server is listening on port 7777');
 });
