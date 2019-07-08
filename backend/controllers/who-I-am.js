@@ -1,22 +1,17 @@
-exports.getIp = (req, res) => {
-	const ip = req.connection.remoteAddress;
-	return res.json({ msg: ip });
-};
 
-exports.getHost = (req, res) => {
-	const { hostname } = req;
-	return res.json({ msg: hostname });
-};
 
-exports.getReferer = (req, res) => {
-	const referer = req.headers.host;
-	return res.json({ msg: referer });
-};
+exports.getInfo = (req,res) => {
+	const info = {
+		ip: req.connection.remoteAddress,
+		hostname: req.hostname,
+		referer: req.headers.host,
+		agent: req.useragent.source
+	}
 
-exports.getUserAgent = (req, res) => {
-	return res.json({ msg: req.useragent.source });
-};
-
-exports.getCookies = (req, res) => {
-	return res.json({ msg: req.cookies.token });
-};
+	res.json({
+		ip: info.ip,
+		hostname: info.hostname,
+		referer: info.referer,
+		agent: info.agent
+	})
+}

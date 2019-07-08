@@ -11,25 +11,14 @@ class WhoIAm extends Component {
 	};
 
 	componentDidMount() {
-		fetch('http://localhost:7777/ip')
+		fetch('http://localhost:7777/userInfo')
 			.then(res => res.json())
-			.then(res => this.setState({ ip: res.msg }));
-
-		fetch('http://localhost:7777/host')
-			.then(res => res.json())
-			.then(res => this.setState({ host: res.msg }));
-
-		fetch('http://localhost:7777/referer')
-			.then(res => res.json())
-			.then(res => this.setState({ referer: res.msg }));
-
-		fetch('http://localhost:7777/agent')
-			.then(res => res.json())
-			.then(res => this.setState({ agent: res.msg }));
-
-		fetch('http://localhost:7777/cookies')
-			.then(res => res.json())
-			.then(res => this.setState({ cookie: res.msg }));
+			.then(res => this.setState({
+				ip: res.ip,
+				host: res.host,
+				referer: res.referer,
+				agent: res.agent,
+			}));
 	}
 	render() {
 		return (
@@ -66,12 +55,12 @@ class WhoIAm extends Component {
 						<p className="black mb-16">{this.state.agent}</p>
 					</div>
 
-					<div className="cookies">
+					{/* <div className="cookies">
 						<p className="small">COOKIES</p>
 						<ul className="list black mb-16">
 							<li>{this.state.cookie}</li>
 						</ul>
-					</div>
+					</div> */}
 				</div>
 			</div>
 		);

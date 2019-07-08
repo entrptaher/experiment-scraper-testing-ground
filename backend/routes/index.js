@@ -1,11 +1,8 @@
 const express = require('express');
 const { recaptchaChecker } = require('../controllers/captcha-controller');
 const {
-	getIp,
-	getHost,
-	getReferer,
-	getUserAgent,
-	getCookies
+	getInfo
+	
 } = require('../controllers/who-I-am');
 const { catchErrors } = require('../handlers/errorHandler');
 const { ajax } = require('../controllers/ajaxController');
@@ -17,16 +14,9 @@ router.get('/', (req, res) => {
 });
 
 router.post('/subscribe', recaptchaChecker);
+
 router.get('/ajax', ajax);
 
-router.get('/ip', getIp);
-
-router.get('/host', getHost);
-
-router.get('/referer', getReferer);
-
-router.get('/agent', getUserAgent);
-
-router.get('/cookies', getCookies);
+router.get('/userInfo', getInfo);
 
 module.exports = router;
