@@ -1,11 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-import '../../css/table-report.css';
-import '../../css/table1.css';
-
 class Table2 extends Component {
-	state = {};
 	render() {
 		return (
 			<div className="wrapper">

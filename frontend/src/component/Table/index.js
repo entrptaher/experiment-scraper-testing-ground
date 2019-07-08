@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-import '../css/style.css';
-import '../css/table-report.css';
-
 class TableReport extends Component {
 	state = {};
 	render() {

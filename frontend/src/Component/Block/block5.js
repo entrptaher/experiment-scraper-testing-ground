@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-import '../../css/style.css';
-import '../../css/blocks.css';
 
 class Block5 extends Component {
 	state = {};
