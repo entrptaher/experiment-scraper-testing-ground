@@ -2,6 +2,6 @@
 
 copy the provided example secrets file to the real location:
 
-```cp example.env .env
-
+```
+cp example.env .env
 ```
