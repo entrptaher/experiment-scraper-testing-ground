@@ -36,6 +36,7 @@ a {
 
 .container {
   margin-left: 40px;
+  margin-top: 8rem;
 }
 
 .wrapper {
@@ -74,6 +75,7 @@ a {
 
 .wrapper {
   line-height: 1.5;
+  margin-top: 9rem;
 }
 
 .wrapper .title {
@@ -225,6 +227,7 @@ a {
 .color {
   background-color: #eee;
 }
+
 /* TEXT LIST */
 
 .text-list {
@@ -255,6 +258,7 @@ a {
 .space {
   letter-spacing: 2px;
 }
+
 /* BLOCK */
 .block {
   color: #555;

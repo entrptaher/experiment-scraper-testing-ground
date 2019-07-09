@@ -13,5 +13,5 @@ cp example.env .env
 No matter what you're trying to do though, you'll want to have the API running
 
 ```
-yarn start
+yarn run dev
 ```
