@@ -4,7 +4,7 @@ Experiment Scrapper Testing Ground
 
 ## First Time Setup
 
-The first step to running Spectrum locally is downloading the code by cloning the repository.
+The first step to running Experiment Scrapper Testing Ground locally is downloading the code by cloning the repository.
 
 ```
 git@github.com:entrptaher/experiment-scraper-testing-ground.git
