@@ -61,7 +61,7 @@ typings/
 
 # Yarn Integrity file
 .yarn-integrity
-backend/yarn-error.log 
+/yarn-error.log 
 
 
 # dotenv environment variables file
