@@ -36,13 +36,6 @@ function App() {
 			<div>
 				<ToastContainer position={toast.POSITION.TOP_CENTER} />
 				<Navbar />
-				{/* <br />
-				<br />
-				<br />
-				<br />
-				<br />
-				<br />
-				<br /> */}
 
 				<Route exact path="/" component={Home} />
 				<Route exact path="/table" component={TableReport} />

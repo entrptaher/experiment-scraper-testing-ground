@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-
 class Table3 extends Component {
 	render() {
 		return (
@@ -59,8 +58,8 @@ class Table3 extends Component {
 						</Link>
 					</ul>
 				</div>
-			
-				<table className="table">
+
+				<table className="table mb-32">
 					<thead>
 						<tr>
 							<th rowspan="2">Quarter</th>
@@ -101,7 +100,9 @@ class Table3 extends Component {
 					</thead>
 					<tbody>
 						<tr>
-							<td className="center" colspan="22">2000</td>
+							<td className="center" colspan="22">
+								2000
+							</td>
 						</tr>
 						<tr>
 							<td>Q1</td>
@@ -200,14 +201,18 @@ class Table3 extends Component {
 							<td>$69,217.20</td>
 						</tr>
 						<tr>
-							<td><b>Total for 2000</b></td>
-							<td colspan="21"><b>$1,025,528.40</b></td>
+							<td>
+								<b>Total for 2000</b>
+							</td>
+							<td colspan="21">
+								<b>$1,025,528.40</b>
+							</td>
 						</tr>
 						<tr>
-							<td colspan="22" style={{background:"#EEE"}}></td>
+							<td colspan="22" style={{ background: '#EEE' }}></td>
 						</tr>
 						<tr>
-							<td colspan="22" align="center" style={{fontWeight: 'bold'}}>
+							<td colspan="22" align="center" style={{ fontWeight: 'bold' }}>
 								<center>2001</center>
 							</td>
 						</tr>
@@ -308,14 +313,20 @@ class Table3 extends Component {
 							<td>$107,008.20</td>
 						</tr>
 						<tr>
-							<td><b>Total for 2001</b></td>
-							<td colspan="21"><b>$1,936,689.30</b></td>
+							<td>
+								<b>Total for 2001</b>
+							</td>
+							<td colspan="21">
+								<b>$1,936,689.30</b>
+							</td>
 						</tr>
 						<tr>
 							<td className="bg" colspan="22"></td>
 						</tr>
 						<tr>
-							<td className="center" colspan="22">2002</td>
+							<td className="center" colspan="22">
+								2002
+							</td>
 						</tr>
 						<tr>
 							<td>Q1</td>
@@ -414,14 +425,20 @@ class Table3 extends Component {
 							<td>$135,450.90</td>
 						</tr>
 						<tr>
-							<td><b>Total for 2002</b></td>
-							<td colspan="21"><b>$2,674,011.60</b></td>
+							<td>
+								<b>Total for 2002</b>
+							</td>
+							<td colspan="21">
+								<b>$2,674,011.60</b>
+							</td>
 						</tr>
 						<tr>
 							<td className="bg" colspan="22"></td>
 						</tr>
 						<tr>
-							<td className="center" colspan="10">2003</td>
+							<td className="center" colspan="10">
+								2003
+							</td>
 						</tr>
 						<tr>
 							<td>Q1</td>
@@ -520,18 +537,26 @@ class Table3 extends Component {
 							<td>$151,561.80</td>
 						</tr>
 						<tr>
-							<td><b>Total for 2003</b></td>
-							<td colspan="21"><b>$3,171,261.60</b></td>
+							<td>
+								<b>Total for 2003</b>
+							</td>
+							<td colspan="21">
+								<b>$3,171,261.60</b>
+							</td>
 						</tr>
 						<tr>
-              <td className="bg" colspan="22"></td>
+							<td className="bg" colspan="22"></td>
 						</tr>
 						<tr>
-							<td className="center" colspan="10">2004</td>
+							<td className="center" colspan="10">
+								2004
+							</td>
 						</tr>
 						<tr>
 							<td>Q1</td>
-							<td style={{background:"#FEE"}} colspan="2"><center>-</center></td>
+							<td style={{ background: '#FEE' }} colspan="2">
+								<center>-</center>
+							</td>
 							<td>76</td>
 							<td>$15,116.40</td>
 							<td>76</td>
@@ -625,14 +650,20 @@ class Table3 extends Component {
 							<td>$153,948.60</td>
 						</tr>
 						<tr>
-							<td><b>Total for 2004</b></td>
-							<td colspan="21"><b>$3,237,097.50</b></td>
+							<td>
+								<b>Total for 2004</b>
+							</td>
+							<td colspan="21">
+								<b>$3,237,097.50</b>
+							</td>
 						</tr>
 						<tr>
 							<td className="bg" colspan="22"></td>
 						</tr>
 						<tr>
-							<td className="center" colspan="10">2005</td>
+							<td className="center" colspan="10">
+								2005
+							</td>
 						</tr>
 						<tr>
 							<td>Q1</td>
@@ -640,8 +671,12 @@ class Table3 extends Component {
 							<td>$15,514.20</td>
 							<td>78</td>
 							<td>$15,514.20</td>
-							<td style={{background:"#EEE"}} rowspan="4"><center>-</center></td>
-							<td style={{background:"#EEF"}} rowspan="4"><center>-</center></td>
+							<td style={{ background: '#EEE' }} rowspan="4">
+								<center>-</center>
+							</td>
+							<td style={{ background: '#EEF' }} rowspan="4">
+								<center>-</center>
+							</td>
 							<td>77</td>
 							<td>$15,315.30</td>
 							<td>77</td>
@@ -725,14 +760,18 @@ class Table3 extends Component {
 							<td>$127,892.70</td>
 						</tr>
 						<tr>
-							<td><b>Total for 2005</b></td>
-							<td colspan="21"><b>$2,812,048.20</b></td>
+							<td>
+								<b>Total for 2005</b>
+							</td>
+							<td colspan="21">
+								<b>$2,812,048.20</b>
+							</td>
 						</tr>
 						<tr>
-							<td colspan="22" style={{background:"#EEE"}}></td>
+							<td colspan="22" style={{ background: '#EEE' }}></td>
 						</tr>
 						<tr>
-							<td colspan="22" align="center" style={{fontWeight: "bold"}}>
+							<td colspan="22" align="center" style={{ fontWeight: 'bold' }}>
 								<center>2006</center>
 							</td>
 						</tr>
@@ -788,7 +827,9 @@ class Table3 extends Component {
 							<td>Q3</td>
 							<td>69</td>
 							<td>$13,724.10</td>
-							<td style={{background:"#EEE"}} colspan="2"><center>-</center></td>
+							<td style={{ background: '#EEE' }} colspan="2">
+								<center>-</center>
+							</td>
 							<td>67</td>
 							<td>$13,326.30</td>
 							<td>65</td>
@@ -832,14 +873,18 @@ class Table3 extends Component {
 							<td>$118,942.20</td>
 						</tr>
 						<tr>
-							<td><b>Total for 2006</b></td>
-							<td colspan="21"><b>$2,795,738.40</b></td>
+							<td>
+								<b>Total for 2006</b>
+							</td>
+							<td colspan="21">
+								<b>$2,795,738.40</b>
+							</td>
 						</tr>
 						<tr>
-							<td colspan="22" style={{background:"#EEE"}}></td>
+							<td colspan="22" style={{ background: '#EEE' }}></td>
 						</tr>
 						<tr>
-							<td colspan="22" align="center" style={{fontWeight: 'bold'}}>
+							<td colspan="22" align="center" style={{ fontWeight: 'bold' }}>
 								<center>2007</center>
 							</td>
 						</tr>
@@ -940,14 +985,18 @@ class Table3 extends Component {
 							<td>$84,134.70</td>
 						</tr>
 						<tr>
-							<td><b>Total for 2007</b></td>
-							<td colspan="21"><b>$2,270,642.40</b></td>
+							<td>
+								<b>Total for 2007</b>
+							</td>
+							<td colspan="21">
+								<b>$2,270,642.40</b>
+							</td>
 						</tr>
 						<tr>
-							<td colspan="22" style={{background:"#EEE"}}></td>
+							<td colspan="22" style={{ background: '#EEE' }}></td>
 						</tr>
 						<tr>
-							<td colspan="22" align="center" style={{background:"#EEE"}}>
+							<td colspan="22" align="center" style={{ background: '#EEE' }}>
 								<center>2008</center>
 							</td>
 						</tr>
@@ -1048,14 +1097,18 @@ class Table3 extends Component {
 							<td>$42,166.80</td>
 						</tr>
 						<tr>
-							<td><b>Total for 2008</b></td>
-							<td colspan="21"><b>$1,425,516.30</b></td>
+							<td>
+								<b>Total for 2008</b>
+							</td>
+							<td colspan="21">
+								<b>$1,425,516.30</b>
+							</td>
 						</tr>
 						<tr>
-							<td colspan="22" style={{background:"#EEE"}}></td>
+							<td colspan="22" style={{ background: '#EEE' }}></td>
 						</tr>
 						<tr>
-							<td colspan="22" align="center" style={{background:"#EEE"}}>
+							<td colspan="22" align="center" style={{ background: '#EEE' }}>
 								<center>2009</center>
 							</td>
 						</tr>
@@ -1156,16 +1209,18 @@ class Table3 extends Component {
 							<td>$11,934.00</td>
 						</tr>
 						<tr>
-							<td><b>Total for 2009</b></td>
-							<td colspan="21"><b>$501,426.90</b></td>
+							<td>
+								<b>Total for 2009</b>
+							</td>
+							<td colspan="21">
+								<b>$501,426.90</b>
+							</td>
 						</tr>
 						<tr>
-							<td colspan="22" style={{background:"#EEE"}}></td>
+							<td colspan="22" style={{ background: '#EEE' }}></td>
 						</tr>
 					</tbody>
 				</table>
-				<br /><br /><br />
-			
 			</div>
 		);
 	}
