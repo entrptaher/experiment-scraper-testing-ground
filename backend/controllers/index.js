@@ -14,15 +14,15 @@ exports.ajax = async (req, res) => {
       name: 'Alice',
     },
   ];
+  const html = '<ul><li>Tom</li><li>Andrew</li><li>Bob</li></ul>';
+  const xml = '<?xml version="1.0"?><names><name>Justin</name><name>Rebecca</name><name>Stephen</name></names>';
   switch (mode) {
     case 'html':
       res.set('Content-Type', 'text/html');
-      return res.send(new Buffer('<ul><li>Tom</li><li>Andrew</li><li>Bob</li></ul>'));
+      return res.send(new Buffer.from(html));
     case 'xml':
       res.set('Content-Type', 'text/xml');
-      return res.send(
-        '<?xml version="1.0"?><names><name>Justin</name><name>Rebecca</name><name>Stephen</name></names>',
-      );
+      return res.send(xml);
     case 'json':
       return res.json(data);
     default:
@@ -35,12 +35,12 @@ exports.recaptchaChecker = (req, res) => {
     connection: { remoteAddress },
     body: { captcha },
   } = req;
-  
+
   if (!captcha) {
     return res.json({ success: false, msg: 'Please Select Captcha' });
   }
-  const secretKey = process.env.SECRET_KEY;
-  const URL = `https://google.com/recaptcha/api/siteverify?secret=${secretKey}&response=${captcha}&remoteip=${remoteAddress}`;
+  const { SECRET_KEY } = process.env;
+  const URL = `https://google.com/recaptcha/api/siteverify?secret=${SECRET_KEY}&response=${captcha}&remoteip=${remoteAddress}`;
 
   return request(URL, (err, response, body) => {
     const { success } = JSON.parse(body);
