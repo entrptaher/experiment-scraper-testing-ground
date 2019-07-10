@@ -32,9 +32,10 @@ exports.ajax = async (req, res) => {
 
 exports.recaptchaChecker = (req, res) => {
   const {
-    captcha,
     connection: { remoteAddress },
-  } = req.body;
+    body: { captcha },
+  } = req;
+  
   if (!captcha) {
     return res.json({ success: false, msg: 'Please Select Captcha' });
   }
@@ -43,7 +44,7 @@ exports.recaptchaChecker = (req, res) => {
 
   return request(URL, (err, response, body) => {
     const { success } = JSON.parse(body);
-    if (success) {
+    if (!success) {
       return res.json({ success: false, msg: 'Failed captcha verification' });
     }
     return res.json({ success: true, msg: 'Captcha passed' });
