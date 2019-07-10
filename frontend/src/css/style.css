@@ -310,3 +310,8 @@ table th {
 .discount {
   font-size: 10px;
 }
+
+.submit {
+  padding: 0.5rem;
+  margin-top: 5px;
+}

@@ -60,7 +60,7 @@ class ReCaptcha extends Component {
 					/>
 				)}
 
-				<button onClick={this.sendRequest} className="button">
+				<button onClick={this.sendRequest} className="submit">
 					Submit
 				</button>
 			</div>
