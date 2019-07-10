@@ -27,3 +27,5 @@ yarn or npm install
 ## FRONTEND
 
 - start server: `yarn start`
+
+## CREATING THE SITE KEY FOR GOOGLE RECAPTCHA
