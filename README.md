@@ -31,7 +31,7 @@ yarn or npm install
 
 ## CREATING THE SITE KEY FOR GOOGLE RECAPTCHA
 
-At first you need to go to this [google recaptcha](https://www.google.com/recaptcha/admin/create "Google's Recaptcha") website
+- At first you need to go to this [google recaptcha](https://www.google.com/recaptcha/admin/create "Google's Recaptcha") website
 
-Then follow this image for more instruction
-![alt text](https://github.com/entrptaher/experiment-scraper-testing-ground/blob/doc/frontend/src/img/logo3.png 'Logo Title Text 1')
+- Then follow this image for more instruction
+  ![alt text](https://github.com/entrptaher/experiment-scraper-testing-ground/blob/doc/frontend/src/img/recap.png 'Logo Title Text 1')
