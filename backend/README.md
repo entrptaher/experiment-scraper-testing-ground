@@ -1,17 +1,20 @@
-## Getting the secrets
+# ENVIRONMENT VARIABLES
 
-copy the provided example secrets file to the real location:
-
+Copy the content of `example.env` and paste into `.env` file.
 ```
 cp example.env .env
 ```
+This will create the `.env` file and copy the content of `example.env`
 
-## Running the app locally
-
-### Start the servers
-
-No matter what you're trying to do though, you'll want to have the API running
-
+Now change those variables value
 ```
-yarn run dev
+PORT=4000
+SECRET_KEY= your google recaptcha secret key
+```
+[See the instruction to create google recaptcha secret key](https://github.com/entrptaher/experiment-scraper-testing-ground/blob/master/README.md#creating-the-site-key-for-google-recaptcha)
+
+in example 
+```
+PORT=4000
+SECRET_KEY=abcdefgh
 ```
