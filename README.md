@@ -35,4 +35,4 @@ yarn or npm install
 
 - Then follow this image for more instruction
 
-  ![alt text](https://github.com/entrptaher/experiment-scraper-testing-ground/blob/doc/frontend/src/img/recap.png 'Logo Title Text 1')
+  ![screenshot](https://github.com/entrptaher/experiment-scraper-testing-ground/blob/master/screenshot.png 'Screenshot')
