@@ -28,7 +28,7 @@ function App() {
 
         <Route path="/table/:tableNo?" component={TableReport} />
         <Route path="/block" component={Block} />
-        <Route path="/textlist/:textListNo?" component={TextList} />
+        <Route path="/textlist" component={TextList} />
 
         <Route path="/invalid" component={InvalidHtml} />
 
