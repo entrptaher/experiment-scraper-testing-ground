@@ -68,22 +68,22 @@ class Block3 extends Component {
 						<table>
 							<thead>
 								<tr className="gray">
-									<th colspan="21">
+									<th colSpan="21">
 										Dell Latitude D610-1.73 Laptop Wireless Computer
 									</th>
-									<th colspan="1">$239.95</th>
+									<th colSpan="1">$239.95</th>
 								</tr>
 
 								<tr className="gray">
-									<th colspan="21">
+									<th colSpan="21">
 										2 GHz Intel Pentium M, 1 GB DDR2 SDRAM, 40 GB, Microsoft
 										Windows XP Professiona
 									</th>
 								</tr>
 
 								<tr className="white">
-									<th colspan="20">Samsung Chromebook (Wi-Fi, 11.6-Inch)</th>
-									<th className="best" rowspan="2">
+									<th colSpan="20">Samsung Chromebook (Wi-Fi, 11.6-Inch)</th>
+									<th className="best" rowSpan="2">
 										Best Price!
 									</th>
 									<th className="best">$249.00</th>
@@ -94,31 +94,31 @@ class Block3 extends Component {
 								</tr>
 
 								<tr>
-									<th className="center bg" colspan="22">
+									<th className="center bg" colSpan="22">
 										ADVERTISEMENT
 									</th>
 								</tr>
 
 								<tr className="gray">
-									<th colspan="21">
+									<th colSpan="21">
 										Apple MacBook Pro MD101LL/A 13.3-Inch Laptop (NEWEST
 										VERSION)
 									</th>
-									<th colspan="1">$1,099.99</th>
+									<th colSpan="1">$1,099.99</th>
 								</tr>
 
 								<tr className="gray">
-									<th colspan="21">
+									<th colSpan="21">
 										2.5 GHz Intel Core i5, 4 GB DDR3 SDRAM, 500 GB Serial ATA,
 										Mac OS X v10.7 Lion
 									</th>
 								</tr>
 
 								<tr className="white">
-									<th colspan="20">
+									<th colSpan="20">
 										Acer Aspire AS5750Z-4835 15.6-Inch Laptop (Black)
 									</th>
-									<th className="best" rowspan="2">
+									<th className="best" rowSpan="2">
 										Best Price!
 									</th>
 									<th className="best">$385.72</th>
@@ -132,20 +132,20 @@ class Block3 extends Component {
 								</tr>
 
 								<tr>
-									<th className="center bg" colspan="22">
+									<th className="center bg" colSpan="22">
 										ADVERTISEMENT
 									</th>
 								</tr>
 
 								<tr>
-									<th colspan="21">
+									<th colSpan="21">
 										HP Pavilion g7-2010nr 17.3-Inch Laptop (Black)
 									</th>
 									<th>$549.99</th>
 								</tr>
 
 								<tr>
-									<th colspan="21">
+									<th colSpan="21">
 										2.3 GHz Core i3-2350M, 6 GB SDRAM, 640 GB, Windows 7 Home
 										Premium 64-bit
 									</th>
@@ -154,12 +154,12 @@ class Block3 extends Component {
 								</tr>
 
 								<tr>
-									<th colspan="21">ASUS A53Z-AS61 15.6-Inch Laptop (Mocha)</th>
+									<th colSpan="21">ASUS A53Z-AS61 15.6-Inch Laptop (Mocha)</th>
 									<th>$399.99</th>
 								</tr>
 
 								<tr>
-									<th colspan="21"></th>
+									<th colSpan="21"></th>
 								</tr>
 							</thead>
 						</table>
@@ -167,22 +167,22 @@ class Block3 extends Component {
 						<table>
 							<thead>
 								<tr className="gray">
-									<th colspan="21">
+									<th colSpan="21">
 										Dell Latitude D610-1.73 Laptop Wireless Computer
 									</th>
-									<th colspan="1">$239.95</th>
+									<th colSpan="1">$239.95</th>
 								</tr>
 
 								<tr className="gray">
-									<th colspan="21">
+									<th colSpan="21">
 										2 GHz Intel Pentium M, 1 GB DDR2 SDRAM, 40 GB, Microsoft
 										Windows XP Professiona
 									</th>
 								</tr>
 
 								<tr className="white">
-									<th colspan="20">Samsung Chromebook (Wi-Fi, 11.6-Inch)</th>
-									<th className="best" rowspan="2">
+									<th colSpan="20">Samsung Chromebook (Wi-Fi, 11.6-Inch)</th>
+									<th className="best" rowSpan="2">
 										Best Price!
 									</th>
 									<th className="best">$249.00</th>
@@ -193,31 +193,31 @@ class Block3 extends Component {
 								</tr>
 
 								<tr>
-									<th className="center bg" colspan="22">
+									<th className="center bg" colSpan="22">
 										ADVERTISEMENT
 									</th>
 								</tr>
 
 								<tr className="gray">
-									<th colspan="21">
+									<th colSpan="21">
 										Apple MacBook Pro MD101LL/A 13.3-Inch Laptop (NEWEST
 										VERSION)
 									</th>
-									<th colspan="1">$1,099.99</th>
+									<th colSpan="1">$1,099.99</th>
 								</tr>
 
 								<tr className="gray">
-									<th colspan="21">
+									<th colSpan="21">
 										2.5 GHz Intel Core i5, 4 GB DDR3 SDRAM, 500 GB Serial ATA,
 										Mac OS X v10.7 Lion
 									</th>
 								</tr>
 
 								<tr className="white">
-									<th colspan="20">
+									<th colSpan="20">
 										Acer Aspire AS5750Z-4835 15.6-Inch Laptop (Black)
 									</th>
-									<th className="best" rowspan="2">
+									<th className="best" rowSpan="2">
 										Best Price!
 									</th>
 									<th className="best">$385.72</th>
@@ -231,20 +231,20 @@ class Block3 extends Component {
 								</tr>
 
 								<tr>
-									<th className="center bg" colspan="22">
+									<th className="center bg" colSpan="22">
 										ADVERTISEMENT
 									</th>
 								</tr>
 
 								<tr>
-									<th colspan="21">
+									<th colSpan="21">
 										HP Pavilion g7-2010nr 17.3-Inch Laptop (Black)
 									</th>
 									<th>$549.99</th>
 								</tr>
 
 								<tr>
-									<th colspan="21">
+									<th colSpan="21">
 										2.3 GHz Core i3-2350M, 6 GB SDRAM, 640 GB, Windows 7 Home
 										Premium 64-bit
 									</th>
@@ -253,12 +253,12 @@ class Block3 extends Component {
 								</tr>
 
 								<tr>
-									<th colspan="21">ASUS A53Z-AS61 15.6-Inch Laptop (Mocha)</th>
+									<th colSpan="21">ASUS A53Z-AS61 15.6-Inch Laptop (Mocha)</th>
 									<th>$399.99</th>
 								</tr>
 
 								<tr>
-									<th colspan="21"></th>
+									<th colSpan="21"></th>
 								</tr>
 							</thead>
 						</table>

@@ -13,12 +13,12 @@ class WhoIAm extends Component {
   componentDidMount() {
     fetch(`${process.env.REACT_APP_SERVER}/userInfo`)
       .then(res => res.json())
-      .then(res =>
+      .then(({ ip, host, referer, agent }) =>
         this.setState({
-          ip: res.ip,
-          host: res.host,
-          referer: res.referer,
-          agent: res.agent,
+          ip,
+          host,
+          referer,
+          agent,
           cookie: cookie.loadAll()
         })
       );
