@@ -8,9 +8,6 @@ import Recaptcha from './component/Re-Captcha';
 import Home from './component/Home';
 import Navbar from './component/Nav-bar';
 import TableReport from './component/Table';
-import Table1 from './component/Table/Table1';
-import Table2 from './component/Table/Table2';
-import Table3 from './component/Table/Table3';
 import Block from './component/Block';
 import Block1 from './component/Block/Block1';
 import Block2 from './component/Block/Block2';
@@ -33,11 +30,7 @@ function App() {
         <Navbar />
 
         <Route exact path="/" component={Home} />
-        <Route exact path="/table" component={TableReport} />
-        <Route path="/table/table1" component={Table1} />
-        <Route path="/table/table2" component={Table2} />
-        <Route path="/table/table2" component={Table2} />
-        <Route path="/table/table3" component={Table3} />
+        <Route path="/table/:tableNo?" component={TableReport} />
 
         <Route exact path="/block" component={Block} />
         <Route path="/block/block1" component={Block1} />

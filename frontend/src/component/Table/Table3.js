@@ -1,79 +1,22 @@
-import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react'
 
-class Table3 extends Component {
-	render() {
-		return (
-			<div className="wrapper">
-				<div className="title mb-16">table-report</div>
-				<div className="table-report">
-					<p className="mb-16">
-						Suppose you need to scrape a financial report organized as a table.
-						This test checks the scraper's ability to:
-					</p>
-					<ol className="list mb-16">
-						<li>Support tables with indefinite number of rows and columns</li>
-						<li>Tolerate merged columns and rows</li>
-						<li>Parse currency format</li>
-						<li>Extract only a certain year</li>
-					</ol>
-					<p className="mb-16">
-						To change the table you may use the following parameters:
-					</p>
-					<ul className="list mb-16">
-						<li>
-							<b>products</b> - number of products column(from 1 to 50)
-						</li>
-						<li>
-							<b>years</b> - number of year sections in the report
-						</li>
-						<li>
-							<b>quarters</b> - number of quarters in the last year
-						</li>
-					</ul>
-					<p>
-						There should be a one year section with a merged column (for Product
-						3), and if more than one year are shown, there should be one or more
-						merged cells in some quarter rows (for Products 1 and 2). All merged
-						cells in the report contain a hyphen only
-					</p>
-
-					<p className="mb-16">
-						For testing, you may use the following sample links. The scraper
-						should sufficiently scrape all data from the reports using the same
-						project:
-					</p>
-
-					<ul className="list">
-						<Link to="/table/table1">
-							<li>1 product, 1 quarter</li>
-						</Link>
-
-						<Link to="/table/table2">
-							<li>4 products, 2.5 years</li>
-						</Link>
-
-						<Link to="/table/table3">
-							<li>10 products, 10 years</li>
-						</Link>
-					</ul>
-				</div>
-
-				<table className="table mb-32">
+export default function Table3() {
+	return (
+		<table className="table mb-32">
 					<thead>
 						<tr>
-							<th rowspan="2">Quarter</th>
-							<th colspan="2">Product 1</th>
-							<th colspan="2">Product 2</th>
-							<th colspan="2">Product 3</th>
-							<th colspan="2">Product 4</th>
-							<th colspan="2">Product 5</th>
-							<th colspan="2">Product 6</th>
-							<th colspan="2">Product 7</th>
-							<th colspan="2">Product 8</th>
-							<th colspan="2">Product 9</th>
-							<th colspan="2">Product 10</th>
-							<th rowspan="2">Total Amount</th>
+							<th rowSpan="2">Quarter</th>
+							<th colSpan="2">Product 1</th>
+							<th colSpan="2">Product 2</th>
+							<th colSpan="2">Product 3</th>
+							<th colSpan="2">Product 4</th>
+							<th colSpan="2">Product 5</th>
+							<th colSpan="2">Product 6</th>
+							<th colSpan="2">Product 7</th>
+							<th colSpan="2">Product 8</th>
+							<th colSpan="2">Product 9</th>
+							<th colSpan="2">Product 10</th>
+							<th rowSpan="2">Total Amount</th>
 						</tr>
 						<tr>
 							<th>Items</th>
@@ -100,7 +43,7 @@ class Table3 extends Component {
 					</thead>
 					<tbody>
 						<tr>
-							<td className="center" colspan="22">
+							<td className="center" colSpan="22">
 								2000
 							</td>
 						</tr>
@@ -204,15 +147,15 @@ class Table3 extends Component {
 							<td>
 								<b>Total for 2000</b>
 							</td>
-							<td colspan="21">
+							<td colSpan="21">
 								<b>$1,025,528.40</b>
 							</td>
 						</tr>
 						<tr>
-							<td colspan="22" style={{ background: '#EEE' }}></td>
+							<td colSpan="22" style={{ background: '#EEE' }}></td>
 						</tr>
 						<tr>
-							<td colspan="22" align="center" style={{ fontWeight: 'bold' }}>
+							<td colSpan="22" align="center" style={{ fontWeight: 'bold' }}>
 								<center>2001</center>
 							</td>
 						</tr>
@@ -316,15 +259,15 @@ class Table3 extends Component {
 							<td>
 								<b>Total for 2001</b>
 							</td>
-							<td colspan="21">
+							<td colSpan="21">
 								<b>$1,936,689.30</b>
 							</td>
 						</tr>
 						<tr>
-							<td className="bg" colspan="22"></td>
+							<td className="bg" colSpan="22"></td>
 						</tr>
 						<tr>
-							<td className="center" colspan="22">
+							<td className="center" colSpan="22">
 								2002
 							</td>
 						</tr>
@@ -428,15 +371,15 @@ class Table3 extends Component {
 							<td>
 								<b>Total for 2002</b>
 							</td>
-							<td colspan="21">
+							<td colSpan="21">
 								<b>$2,674,011.60</b>
 							</td>
 						</tr>
 						<tr>
-							<td className="bg" colspan="22"></td>
+							<td className="bg" colSpan="22"></td>
 						</tr>
 						<tr>
-							<td className="center" colspan="10">
+							<td className="center" colSpan="10">
 								2003
 							</td>
 						</tr>
@@ -540,21 +483,21 @@ class Table3 extends Component {
 							<td>
 								<b>Total for 2003</b>
 							</td>
-							<td colspan="21">
+							<td colSpan="21">
 								<b>$3,171,261.60</b>
 							</td>
 						</tr>
 						<tr>
-							<td className="bg" colspan="22"></td>
+							<td className="bg" colSpan="22"></td>
 						</tr>
 						<tr>
-							<td className="center" colspan="10">
+							<td className="center" colSpan="10">
 								2004
 							</td>
 						</tr>
 						<tr>
 							<td>Q1</td>
-							<td style={{ background: '#FEE' }} colspan="2">
+							<td style={{ background: '#FEE' }} colSpan="2">
 								<center>-</center>
 							</td>
 							<td>76</td>
@@ -653,15 +596,15 @@ class Table3 extends Component {
 							<td>
 								<b>Total for 2004</b>
 							</td>
-							<td colspan="21">
+							<td colSpan="21">
 								<b>$3,237,097.50</b>
 							</td>
 						</tr>
 						<tr>
-							<td className="bg" colspan="22"></td>
+							<td className="bg" colSpan="22"></td>
 						</tr>
 						<tr>
-							<td className="center" colspan="10">
+							<td className="center" colSpan="10">
 								2005
 							</td>
 						</tr>
@@ -671,10 +614,10 @@ class Table3 extends Component {
 							<td>$15,514.20</td>
 							<td>78</td>
 							<td>$15,514.20</td>
-							<td style={{ background: '#EEE' }} rowspan="4">
+							<td style={{ background: '#EEE' }} rowSpan="4">
 								<center>-</center>
 							</td>
-							<td style={{ background: '#EEF' }} rowspan="4">
+							<td style={{ background: '#EEF' }} rowSpan="4">
 								<center>-</center>
 							</td>
 							<td>77</td>
@@ -763,15 +706,15 @@ class Table3 extends Component {
 							<td>
 								<b>Total for 2005</b>
 							</td>
-							<td colspan="21">
+							<td colSpan="21">
 								<b>$2,812,048.20</b>
 							</td>
 						</tr>
 						<tr>
-							<td colspan="22" style={{ background: '#EEE' }}></td>
+							<td colSpan="22" style={{ background: '#EEE' }}></td>
 						</tr>
 						<tr>
-							<td colspan="22" align="center" style={{ fontWeight: 'bold' }}>
+							<td colSpan="22" align="center" style={{ fontWeight: 'bold' }}>
 								<center>2006</center>
 							</td>
 						</tr>
@@ -827,7 +770,7 @@ class Table3 extends Component {
 							<td>Q3</td>
 							<td>69</td>
 							<td>$13,724.10</td>
-							<td style={{ background: '#EEE' }} colspan="2">
+							<td style={{ background: '#EEE' }} colSpan="2">
 								<center>-</center>
 							</td>
 							<td>67</td>
@@ -876,15 +819,15 @@ class Table3 extends Component {
 							<td>
 								<b>Total for 2006</b>
 							</td>
-							<td colspan="21">
+							<td colSpan="21">
 								<b>$2,795,738.40</b>
 							</td>
 						</tr>
 						<tr>
-							<td colspan="22" style={{ background: '#EEE' }}></td>
+							<td colSpan="22" style={{ background: '#EEE' }}></td>
 						</tr>
 						<tr>
-							<td colspan="22" align="center" style={{ fontWeight: 'bold' }}>
+							<td colSpan="22" align="center" style={{ fontWeight: 'bold' }}>
 								<center>2007</center>
 							</td>
 						</tr>
@@ -988,15 +931,15 @@ class Table3 extends Component {
 							<td>
 								<b>Total for 2007</b>
 							</td>
-							<td colspan="21">
+							<td colSpan="21">
 								<b>$2,270,642.40</b>
 							</td>
 						</tr>
 						<tr>
-							<td colspan="22" style={{ background: '#EEE' }}></td>
+							<td colSpan="22" style={{ background: '#EEE' }}></td>
 						</tr>
 						<tr>
-							<td colspan="22" align="center" style={{ background: '#EEE' }}>
+							<td colSpan="22" align="center" style={{ background: '#EEE' }}>
 								<center>2008</center>
 							</td>
 						</tr>
@@ -1100,15 +1043,15 @@ class Table3 extends Component {
 							<td>
 								<b>Total for 2008</b>
 							</td>
-							<td colspan="21">
+							<td colSpan="21">
 								<b>$1,425,516.30</b>
 							</td>
 						</tr>
 						<tr>
-							<td colspan="22" style={{ background: '#EEE' }}></td>
+							<td colSpan="22" style={{ background: '#EEE' }}></td>
 						</tr>
 						<tr>
-							<td colspan="22" align="center" style={{ background: '#EEE' }}>
+							<td colSpan="22" align="center" style={{ background: '#EEE' }}>
 								<center>2009</center>
 							</td>
 						</tr>
@@ -1212,18 +1155,14 @@ class Table3 extends Component {
 							<td>
 								<b>Total for 2009</b>
 							</td>
-							<td colspan="21">
+							<td colSpan="21">
 								<b>$501,426.90</b>
 							</td>
 						</tr>
 						<tr>
-							<td colspan="22" style={{ background: '#EEE' }}></td>
+							<td colSpan="22" style={{ background: '#EEE' }}></td>
 						</tr>
 					</tbody>
 				</table>
-			</div>
-		);
-	}
+	)
 }
-
-export default Table3;
