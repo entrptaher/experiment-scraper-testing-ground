@@ -1,138 +1,66 @@
-import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react';
 
-class TextList5 extends Component {
-	state = {};
-	render() {
-		return (
-			<div className="wrapper">
-				<div className="text-list">
-					<h1 className="title mb-16">TEXT LIST (Version 5)</h1>
-					<p className="mb-16">
-						Some web publishers do not trouble themselves by formatting their
-						data using HTML elements and often simply put information on their
-						web site as a plain text. What is even worse, they sometimes add
-						supplementary notes in the same manner as the main information
-						making it harder to separate them. But a good web scraper should
-						overcome all these obstacles.
-					</p>
+export default function TextList5() {
+  return (
+    <div className="testListFour">
+      <div className="population">
+        <p className="child text-list">New York</p>
+        <p className="child text-list space">8,244,910</p>
+      </div>
 
-					<p className="mb-16">
-						In this test, the web scraper needs to scrape a list of US cities
-						with their population organized as a simple text. Specifically, it
-						has to:
-					</p>
+      <div className="population">
+        <p className="child text-list">Los Angeles</p>
+        <p className="child space text-list">3,819,702</p>
+      </div>
 
-					<ol className="mb-16 list">
-						<li>
-							Extract all the cities and their population, while skipping all
-							the notes
-						</li>
-						<li>Scrape cities with their notes (if any)</li>
-						<li>Scrape bold cities (with their population) only</li>
-					</ol>
+      <div className="population">
+        <p className="child text-list">Chicago</p>
+        <p className="child space text-list">2,707,120</p>
+      </div>
 
-					<p className="mb-16">
-						There is a ver parameter (which varies from 1 to 5) to show
-						different list versions (with different city numbers, bold cities
-						and their notes).
-					</p>
+      <div className="population">
+        <p className="child text-list">Houston</p>
+        <p className="child space text-list">2,145,146</p>
+      </div>
 
-					<p className="mb-16">
-						For testing, you may use the following sample links. The scraper
-						should sufficiently scrape all data from any link using the same
-						project:
-					</p>
+      <div className="population">
+        <h3 className="child">Philadelphia</h3>
+        <h3 className="child space">1,536,471</h3>
+      </div>
+      <div className="population">
+        <p className="child text-list">Phoenix</p>
+        <p className="child space text-list">1,469,471</p>
+      </div>
 
-					<ul className="list mb-32">
-						<Link to="/textlist/textlist1">
-							<li>Text list 1</li>
-						</Link>
+      <div className="population">
+        <p className="child text-list">Arizona</p>
+      </div>
 
-						<Link to="/textlist/textlist2">
-							<li>Text list 2</li>
-						</Link>
+      <div className="population">
+        <p className="child text-list">San Antonio</p>
+        <p className="child space text-list">1,359,758</p>
+      </div>
 
-						<Link to="/textlist/textlist3">
-							<li>Text list 3</li>
-						</Link>
+      <div className="population">
+        <p className="child text-list">San Diego</p>
+        <p className="child space text-list">1,326,179</p>
+      </div>
 
-						<Link to="/textlist/textlist4">
-							<li>Text list 4</li>
-						</Link>
+      <div className="population">
+        <h3 className="child">Dallas</h3>
+        <h3 className="child space">1,223,229</h3>
+      </div>
 
-						<Link to="/textlist/textlist5">
-							<li>Text list 5</li>
-						</Link>
-					</ul>
-					<div class="population">
-						<h3 class="child uppercase">City</h3>
-						<h3 class="child uppercase">Population</h3>
-					</div>
-					<hr class="hr" />
+      <p>change: +2.12%</p>
 
-					<div class="population">
-						<p class="child text-list">New York</p>
-						<p class="child text-list space">8,244,910</p>
-					</div>
+      <div className="population">
+        <p className="child text-list">San Jose</p>
+        <p className="child space text-list">967,487</p>
+      </div>
 
-					<div class="population">
-						<p class="child text-list">Los Angeles</p>
-						<p class="child space text-list">3,819,702</p>
-					</div>
-
-					<div class="population">
-						<p class="child text-list">Chicago</p>
-						<p class="child space text-list">2,707,120</p>
-					</div>
-
-					<div class="population">
-						<p class="child text-list">Houston</p>
-						<p class="child space text-list">2,145,146</p>
-					</div>
-
-					<div class="population">
-						<h3 class="child">Philadelphia</h3>
-						<h3 class="child space">1,536,471</h3>
-					</div>
-					<div class="population">
-						<p class="child text-list">Phoenix</p>
-						<p class="child space text-list">1,469,471</p>
-					</div>
-
-					<div class="population">
-						<p class="child text-list">Arizona</p>
-					</div>
-
-					<div class="population">
-						<p class="child text-list">San Antonio</p>
-						<p class="child space text-list">1,359,758</p>
-					</div>
-
-					<div class="population">
-						<p class="child text-list">San Diego</p>
-						<p class="child space text-list">1,326,179</p>
-					</div>
-
-					<div class="population">
-						<h3 class="child">Dallas</h3>
-						<h3 class="child space">1,223,229</h3>
-					</div>
-
-					<p>change: +2.12%</p>
-
-					<div class="population">
-						<p class="child text-list">San Jose</p>
-						<p class="child space text-list">967,487</p>
-					</div>
-
-					<div class="population mb-48">
-						<p class="child text-list">945,942 in 2010</p>
-					</div>
-				</div>
-			</div>
-		);
-	}
+      <div className="population mb-48">
+        <p className="child text-list">945,942 in 2010</p>
+      </div>
+    </div>
+  );
 }
-
-export default TextList5;
