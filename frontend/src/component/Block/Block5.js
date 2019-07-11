@@ -1,273 +1,341 @@
-import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react';
 
+export default function Block5() {
+	return (
+		<div className="case-5">
+			<h3 className="mt-32">CASE 1</h3>
+			<table>
+				<thead>
+					<tr className="gray">
+						<th colSpan="21">
+							Dell Latitude D610-1.73 Laptop Wireless Computer
+						</th>
+						<th colSpan="1">$239.95</th>
+					</tr>
 
-class Block5 extends Component {
-	state = {};
-	render() {
-		return (
-			<div className="wrapper block">
-				<h1 className="title mb-16">BLOCKS: Price List ((version 5))</h1>
-				<p className="mb-16">
-					In this test, the web scraper needs to scrape a price list organized
-					in a block layout. Specifically, it has to:
-				</p>
-				<ol className="list mb-16">
-					<li>
-						Extract all the products (their names, descriptions and prices),
-						while skipping advertisements
-					</li>
-					<li>Scrape discounted products only</li>
-					<li>Scrape products with red prices only</li>
-				</ol>
-				<p className="mb-16">
-					There is a <b>ver</b> parameter (which varies from 1 to 5) to show
-					different table versions (with different product numbers, best price
-					and advertisement positions).
-				</p>
-				<p className="mb-16">Also there are two tables presented:</p>
-				<ul className="list mb-16">
-					<li>
-						<b>Case 1</b> (simple one, with products and prices placed into the
-						same block)
-					</li>
-					<li>
-						<b>Case 2</b> (complicated one, with products and prices placed into
-						separate blocks)
-					</li>
-				</ul>
-				<p className="mb-16">
-					For testing, you may use the following sample links. The scraper
-					should sufficiently scrape all data from a certain case using the same
-					project:
-				</p>
+					<tr className="gray">
+						<th colSpan="21">
+							2 GHz Intel Pentium M, 1 GB DDR2 SDRAM, 40 GB, Microsoft Windows
+							XP Professiona
+						</th>
+					</tr>
 
-				<ul className="list mb-16">
-					<Link to="/block/block1">
-						<li>Price List 1</li>
-					</Link>
+					<tr className="white">
+						<th colSpan="21">Samsung Chromebook (Wi-Fi, 11.6-Inch)</th>
 
-					<Link to="/block/block2">
-						<li>Price List 2</li>
-					</Link>
+						<th colSpan="1">$249.00</th>
+					</tr>
 
-					<Link to="/block/block3">
-						<li>Price List 3</li>
-					</Link>
+					<tr className="white">
+						<th>1.7 GHz, 2 GB DDR3 SDRAM, 16 GB, Chrome</th>
+					</tr>
 
-					<Link to="/block/block4">
-						<li>Price List 4</li>
-					</Link>
+					<tr className="grey">
+						<th colSpan="20">
+							Apple MacBook Pro MD101LL/A 13.3-Inch Laptop (NEWEST VERSION)
+						</th>
+						<th className="best" rowSpan="2">
+							Best Price!
+						</th>
+						<th className="best">$1,099.9</th>
+					</tr>
 
-					<Link to="/block/block5">
-						<li>Price List 5</li>
-					</Link>
-				</ul>
-				<div className="cases">
-					<div className="case-1">
-						<h3 className="mt-32">CASE 1</h3>
-						<table>
-							<thead>
-								<tr className="gray">
-									<th colSpan="21">
-										Dell Latitude D610-1.73 Laptop Wireless Computer
-									</th>
-									<th colSpan="1">$239.95</th>
-								</tr>
+					<tr>
+						<th>
+							2.5 GHz Intel Core i5, 4 GB DDR3 SDRAM, 500 GB Serial ATA, Mac OS
+							X v10.7 Lion
+						</th>
+					</tr>
 
-								<tr className="gray">
-									<th colSpan="21">
-										2 GHz Intel Pentium M, 1 GB DDR2 SDRAM, 40 GB, Microsoft
-										Windows XP Professiona
-									</th>
-								</tr>
+					<tr>
+						<th className="center bg" colSpan="22">
+							ADVERTISEMENT
+						</th>
+					</tr>
 
-								<tr className="white">
-									<th colSpan="20">Samsung Chromebook (Wi-Fi, 11.6-Inch)</th>
-									<th className="best" rowSpan="2">
-										Best Price!
-									</th>
-									<th className="best">$249.00</th>
-								</tr>
+					<tr className="white">
+						<th colSpan="21">
+							Acer Aspire AS5750Z-4835 15.6-Inch Laptop (Black)
+						</th>
 
-								<tr>
-									<th>1.7 GHz, 2 GB DDR3 SDRAM, 16 GB, Chrome</th>
-								</tr>
+						<th colSpan="1">$385.72</th>
+					</tr>
 
-								<tr>
-									<th className="center bg" colSpan="22">
-										ADVERTISEMENT
-									</th>
-								</tr>
+					<tr className="white">
+						<th>
+							2 GHz Pentium B940, 4 GB SDRAM, 500 GB, Windows 7 Home Premium
+							64-bit
+						</th>
+					</tr>
 
-								<tr className="gray">
-									<th colSpan="21">
-										Apple MacBook Pro MD101LL/A 13.3-Inch Laptop (NEWEST
-										VERSION)
-									</th>
-									<th colSpan="1">$1,099.99</th>
-								</tr>
+					<tr>
+						<th colSpan="21">HP Pavilion g7-2010nr 17.3-Inch Laptop (Black)</th>
+						<th>$549.99</th>
+					</tr>
 
-								<tr className="gray">
-									<th colSpan="21">
-										2.5 GHz Intel Core i5, 4 GB DDR3 SDRAM, 500 GB Serial ATA,
-										Mac OS X v10.7 Lion
-									</th>
-								</tr>
+					<tr>
+						<th colSpan="21">
+							2.3 GHz Core i3-2350M, 6 GB SDRAM, 640 GB, Windows 7 Home Premium
+							64-bit
+						</th>
 
-								<tr className="white">
-									<th colSpan="20">
-										Acer Aspire AS5750Z-4835 15.6-Inch Laptop (Black)
-									</th>
-									<th className="best" rowSpan="2">
-										Best Price!
-									</th>
-									<th className="best">$385.72</th>
-								</tr>
+						{/* <th className="discount">discount 7%</th> */}
+					</tr>
 
-								<tr>
-									<th>
-										2 GHz Pentium B940, 4 GB SDRAM, 500 GB, Windows 7 Home
-										Premium 64-bit
-									</th>
-								</tr>
+					<tr className="white">
+						<th colSpan="20">ASUS A53Z-AS61 15.6-Inch Laptop (Mocha)</th>
+						<th className="best" rowSpan="2">
+							Best Price!
+						</th>
+						<th className="best">$399.99</th>
+					</tr>
 
-								<tr>
-									<th className="center bg" colSpan="22">
-										ADVERTISEMENT
-									</th>
-								</tr>
+					<tr className="white">
+						<th colSpan="15">
+							1.4 GHz A-Series Quad-Core A6-3420M, 4 GB DIMM, 750 GB, Windows 7
+							Home Premium 64-bit
+						</th>
+						<th classPName="discount">discount 7%</th>
+					</tr>
 
-								<tr>
-									<th colSpan="21">
-										HP Pavilion g7-2010nr 17.3-Inch Laptop (Black)
-									</th>
-									<th>$549.99</th>
-								</tr>
+					<tr className="grey">
+						<th colSpan="21">
+							PanDigital 72-70FW 7-Inch Tablet Computer - White
+						</th>
 
-								<tr>
-									<th colSpan="21">
-										2.3 GHz Core i3-2350M, 6 GB SDRAM, 640 GB, Windows 7 Home
-										Premium 64-bit
-									</th>
+						<th colSpan="1">$69</th>
+					</tr>
 
-									<th className="discount">discount 7%</th>
-								</tr>
+					<tr className="grey">
+						<th>1 GHz, 1 MB, 1024 GB, Google Android</th>
+					</tr>
 
-								<tr>
-									<th colSpan="21">ASUS A53Z-AS61 15.6-Inch Laptop (Mocha)</th>
-									<th>$399.99</th>
-								</tr>
+					<tr>
+						<th className="center bg" colSpan="22">
+							ADVERTISEMENT
+						</th>
+					</tr>
 
-								<tr>
-									<th colSpan="21"></th>
-								</tr>
-							</thead>
-						</table>
-						<h3 className="mt-32">CASE 2</h3>
-						<table>
-							<thead>
-								<tr className="gray">
-									<th colSpan="21">
-										Dell Latitude D610-1.73 Laptop Wireless Computer
-									</th>
-									<th colSpan="1">$239.95</th>
-								</tr>
+					<tr className="gray">
+						<th colSpan="21">
+							Dell Inspiron i15N-2728BK 15.6-Inch Laptop (Black)
+						</th>
+						<th colSpan="1">$429.99</th>
+					</tr>
 
-								<tr className="gray">
-									<th colSpan="21">
-										2 GHz Intel Pentium M, 1 GB DDR2 SDRAM, 40 GB, Microsoft
-										Windows XP Professiona
-									</th>
-								</tr>
+					<tr className="gray">
+						<th colSpan="21">
+							2.4 GHz Core i3-2370M, 6 GB DDR3 SDRAM, 500 GB, Windows 7 Home
+							Premium 64-bit
+						</th>
+					</tr>
 
-								<tr className="white">
-									<th colSpan="20">Samsung Chromebook (Wi-Fi, 11.6-Inch)</th>
-									<th className="best" rowSpan="2">
-										Best Price!
-									</th>
-									<th className="best">$249.00</th>
-								</tr>
+					<tr className="white">
+						<th colSpan="21">
+							Acer Aspire AS5750Z-4835 15.6-Inch Laptop (Black)
+						</th>
+						<th colSpan="1">$419.90</th>
+					</tr>
 
-								<tr>
-									<th>1.7 GHz, 2 GB DDR3 SDRAM, 16 GB, Chrome</th>
-								</tr>
+					<tr className="white">
+						<th colSpan="21">
+							2 GHz Pentium B940, 4 GB SDRAM, 500 GB, Windows 7 Home Premium
+							64-bit
+						</th>
+					</tr>
 
-								<tr>
-									<th className="center bg" colSpan="22">
-										ADVERTISEMENT
-									</th>
-								</tr>
+					<tr className="gray">
+						<th colSpan="21">ASUS X55U-EH11 15.6-Inch Laptop</th>
+						<th colSpan="1">$349.99</th>
+					</tr>
 
-								<tr className="gray">
-									<th colSpan="21">
-										Apple MacBook Pro MD101LL/A 13.3-Inch Laptop (NEWEST
-										VERSION)
-									</th>
-									<th colSpan="1">$1,099.99</th>
-								</tr>
+					<tr className="gray">
+						<th colSpan="21">1 GHz, 2 GB DDR3 SDRAM, 320 GB, Windows 8</th>
+					</tr>
 
-								<tr className="gray">
-									<th colSpan="21">
-										2.5 GHz Intel Core i5, 4 GB DDR3 SDRAM, 500 GB Serial ATA,
-										Mac OS X v10.7 Lion
-									</th>
-								</tr>
+					<tr className="white">
+						<th colSpan="21">
+							Dell Inspiron i14z-1000sLV 14-Inch Ultrabook (Moon Silver)
+						</th>
+						<th colSpan="1">$706.00</th>
+					</tr>
 
-								<tr className="white">
-									<th colSpan="20">
-										Acer Aspire AS5750Z-4835 15.6-Inch Laptop (Black)
-									</th>
-									<th className="best" rowSpan="2">
-										Best Price!
-									</th>
-									<th className="best">$385.72</th>
-								</tr>
+					<tr className="grey">
+						<th colSpan="21">
+							2.3 GHz Core i3-3217U, 6 GB DDR3 SDRAM, 500 GB Serial ATA, Windows
+							8
+						</th>
+						<th className="discount">discount 7%</th>
+					</tr>
+				</thead>
+			</table>
+			<h3 className="mt-32">CASE 2</h3>
 
-								<tr>
-									<th>
-										2 GHz Pentium B940, 4 GB SDRAM, 500 GB, Windows 7 Home
-										Premium 64-bit
-									</th>
-								</tr>
+			<table>
+				<thead>
+					<tr className="gray">
+						<th colSpan="21">
+							Dell Latitude D610-1.73 Laptop Wireless Computer
+						</th>
+						<th colSpan="1">$239.95</th>
+					</tr>
 
-								<tr>
-									<th className="center bg" colSpan="22">
-										ADVERTISEMENT
-									</th>
-								</tr>
+					<tr className="gray">
+						<th colSpan="21">
+							2 GHz Intel Pentium M, 1 GB DDR2 SDRAM, 40 GB, Microsoft Windows
+							XP Professiona
+						</th>
+					</tr>
 
-								<tr>
-									<th colSpan="21">
-										HP Pavilion g7-2010nr 17.3-Inch Laptop (Black)
-									</th>
-									<th>$549.99</th>
-								</tr>
+					<tr className="white">
+						<th colSpan="21">Samsung Chromebook (Wi-Fi, 11.6-Inch)</th>
 
-								<tr>
-									<th colSpan="21">
-										2.3 GHz Core i3-2350M, 6 GB SDRAM, 640 GB, Windows 7 Home
-										Premium 64-bit
-									</th>
+						<th colSpan="1">$249.00</th>
+					</tr>
 
-									<th className="discount">discount 7%</th>
-								</tr>
+					<tr className="white">
+						<th>1.7 GHz, 2 GB DDR3 SDRAM, 16 GB, Chrome</th>
+					</tr>
 
-								<tr>
-									<th colSpan="21">ASUS A53Z-AS61 15.6-Inch Laptop (Mocha)</th>
-									<th>$399.99</th>
-								</tr>
+					<tr className="grey">
+						<th colSpan="21">
+							Apple MacBook Pro MD101LL/A 13.3-Inch Laptop (NEWEST VERSION)
+						</th>
 
-								<tr>
-									<th colSpan="21"></th>
-								</tr>
-							</thead>
-						</table>
-					</div>
-				</div>
-			</div>
-		);
-	}
+						<th colSpan="1" className="red">
+							$1,099.9
+						</th>
+					</tr>
+
+					<tr>
+						<th>
+							2.5 GHz Intel Core i5, 4 GB DDR3 SDRAM, 500 GB Serial ATA, Mac OS
+							X v10.7 Lion
+						</th>
+					</tr>
+
+					<tr>
+						<th className="center bg" colSpan="22">
+							ADVERTISEMENT
+						</th>
+					</tr>
+
+					<tr className="white">
+						<th colSpan="21">
+							Acer Aspire AS5750Z-4835 15.6-Inch Laptop (Black)
+						</th>
+
+						<th colSpan="1">$385.72</th>
+					</tr>
+
+					<tr className="white">
+						<th>
+							2 GHz Pentium B940, 4 GB SDRAM, 500 GB, Windows 7 Home Premium
+							64-bit
+						</th>
+					</tr>
+
+					<tr>
+						<th colSpan="21">HP Pavilion g7-2010nr 17.3-Inch Laptop (Black)</th>
+						<th>$549.99</th>
+					</tr>
+
+					<tr>
+						<th colSpan="21">
+							2.3 GHz Core i3-2350M, 6 GB SDRAM, 640 GB, Windows 7 Home Premium
+							64-bit
+						</th>
+
+						{/* <th className="discount">discount 7%</th> */}
+					</tr>
+
+					<tr className="white">
+						<th colSpan="21">ASUS A53Z-AS61 15.6-Inch Laptop (Mocha)</th>
+
+						<th colSpan="21" className="red">
+							$399.99
+						</th>
+					</tr>
+
+					<tr className="white">
+						<th colSpan="15">
+							1.4 GHz A-Series Quad-Core A6-3420M, 4 GB DIMM, 750 GB, Windows 7
+							Home Premium 64-bit
+						</th>
+						<th classPName="discount">discount 7%</th>
+					</tr>
+
+					<tr className="grey">
+						<th colSpan="21">
+							PanDigital 72-70FW 7-Inch Tablet Computer - White
+						</th>
+
+						<th colSpan="1">$69</th>
+					</tr>
+
+					<tr className="grey">
+						<th>1 GHz, 1 MB, 1024 GB, Google Android</th>
+					</tr>
+
+					<tr>
+						<th className="center bg" colSpan="22">
+							ADVERTISEMENT
+						</th>
+					</tr>
+
+					<tr className="gray">
+						<th colSpan="21">
+							Dell Inspiron i15N-2728BK 15.6-Inch Laptop (Black)
+						</th>
+						<th colSpan="1">$429.99</th>
+					</tr>
+
+					<tr className="gray">
+						<th colSpan="21">
+							2.4 GHz Core i3-2370M, 6 GB DDR3 SDRAM, 500 GB, Windows 7 Home
+							Premium 64-bit
+						</th>
+					</tr>
+
+					<tr className="white">
+						<th colSpan="21">
+							Acer Aspire AS5750Z-4835 15.6-Inch Laptop (Black)
+						</th>
+						<th colSpan="1">$419.90</th>
+					</tr>
+
+					<tr className="white">
+						<th colSpan="21">
+							2 GHz Pentium B940, 4 GB SDRAM, 500 GB, Windows 7 Home Premium
+							64-bit
+						</th>
+					</tr>
+
+					<tr className="gray">
+						<th colSpan="21">ASUS X55U-EH11 15.6-Inch Laptop</th>
+						<th colSpan="1">$349.99</th>
+					</tr>
+
+					<tr className="gray">
+						<th colSpan="21">1 GHz, 2 GB DDR3 SDRAM, 320 GB, Windows 8</th>
+					</tr>
+
+					<tr className="white">
+						<th colSpan="21">
+							Dell Inspiron i14z-1000sLV 14-Inch Ultrabook (Moon Silver)
+						</th>
+						<th colSpan="1">$706.00</th>
+					</tr>
+
+					<tr className="grey">
+						<th colSpan="21">
+							2.3 GHz Core i3-3217U, 6 GB DDR3 SDRAM, 500 GB Serial ATA, Windows
+							8
+						</th>
+						<th className="discount">discount 7%</th>
+					</tr>
+				</thead>
+			</table>
+		</div>
+	);
 }
-
-export default Block5;

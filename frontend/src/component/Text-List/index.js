@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import queryString from 'query-string';
 
 import TextList1 from './Text-List1';
 import TextList2 from './Text-List2';
@@ -7,26 +8,23 @@ import TextList3 from './Text-List3';
 import TextList4 from './Text-List4';
 import TextList5 from './Text-List5';
 
-export default function index({
-  match: {
-    params: { textListNo }
-  }
-}) {
+export default function index({ location: { search } }) {
+  const { ver } = queryString.parse(search);
   let textList;
-  switch (textListNo) {
-    case 'textlist1':
+  switch (ver) {
+    case '1':
       textList = <TextList1 />;
       break;
-    case 'textlist2':
+    case '2':
       textList = <TextList2 />;
       break;
-    case 'textlist3':
+    case '3':
       textList = <TextList3 />;
       break;
-    case 'textlist4':
+    case '4':
       textList = <TextList4 />;
       break;
-    case 'textlist5':
+    case '5':
       textList = <TextList5 />;
       break;
 
@@ -37,7 +35,7 @@ export default function index({
   return (
     <div className="wrapper">
       <div className="text-list">
-        <h1 className="title mb-16">TEXT LIST</h1>
+        <h1 className="title mb-16">TEXT LIST {ver && `(version ${ver})`}</h1>
         <p className="mb-16">
           Some web publishers do not trouble themselves by formatting their data
           using HTML elements and often simply put information on their web site
@@ -74,23 +72,23 @@ export default function index({
         </p>
 
         <ul className="list mb-32">
-          <Link to="/textlist/textlist1">
+          <Link to="/textlist?ver=2">
             <li>Text list 1</li>
           </Link>
 
-          <Link to="/textlist/textlist2">
+          <Link to="/textlist?ver=2">
             <li>Text list 2</li>
           </Link>
 
-          <Link to="/textlist/textlist3">
+          <Link to="/textlist?ver=3">
             <li>Text list 3</li>
           </Link>
 
-          <Link to="/textlist/textlist4">
+          <Link to="/textlist?ver=4">
             <li>Text list 4</li>
           </Link>
 
-          <Link to="/textlist/textlist5">
+          <Link to="/textlist?ver=5">
             <li>Text list 5</li>
           </Link>
         </ul>
