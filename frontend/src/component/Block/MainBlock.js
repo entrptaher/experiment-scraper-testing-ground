@@ -1,8 +1,8 @@
 import React from 'react';
 
-export default function Block3() {
+export default function MainBlock() {
   return (
-    <div className="case-3">
+    <div className="case-1">
       <h3 className="mt-32">CASE 1</h3>
       <table>
         <thead>
