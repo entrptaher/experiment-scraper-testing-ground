@@ -125,12 +125,11 @@ a {
 
 .container {
 	margin-left: 40px;
-	margin-top: 8rem;
+	padding: 10px;
 }
 
 .wrapper {
-	margin-top: 9rem;
-	margin-left: 40px;
+	margin: 9rem auto 30px 40px;
 	font-size: 1rem;
 	line-height: 1.5;
 }
@@ -171,7 +170,7 @@ a {
 .items {
 	display: flex;
 	flex-wrap: wrap;
-	width: 1260px;
+	width: 100%;
 	margin: 0 auto;
 	margin-left: 30px;
 	padding-top: 1.25rem;
@@ -229,6 +228,7 @@ a {
 	border-collapse: collapse;
 	border-spacing: 0;
 	display: table;
+	background: #e1e1e1;
 }
 
 .table th {
@@ -303,4 +303,24 @@ table th {
 .submit {
 	padding: 0.5rem;
 	margin-top: 5px;
+}
+
+/* Invalid HTML */
+.invalid-data .child-data {
+  font-size: 18pt;
+  background-color: #ddd;
+  margin: 5px;
+  padding: 5px;
+  max-width: 300px;
+}
+
+ /* LOGIN */
+.login-form input {
+  margin-left: 10px;
+}
+.success {
+  color: green;
+}
+.danger {
+  color: red;
 }
