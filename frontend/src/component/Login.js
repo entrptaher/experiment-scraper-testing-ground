@@ -4,7 +4,8 @@ class Login extends Component {
   state = {
     user: '',
     password: '',
-    isLoggedIn: ''
+    isLoggedIn: false,
+    error: false
   };
 
   onChangeHandler = e => {
@@ -15,26 +16,28 @@ class Login extends Component {
   handleSubmit = e => {
     e.preventDefault();
     const { user, password } = this.state;
-    localStorage.setItem('user', user);
-    localStorage.setItem('password', password);
+    const userPreSaved = localStorage.getItem('user');
+    const passwordPreSaved = localStorage.getItem('password');
+    if (user === userPreSaved && password === passwordPreSaved) {
+      this.setState({ isLoggedIn: true, error: false });
+    } else {
+      this.setState({ isLoggedIn: false, error: true });
+    }
   };
 
   logout = () => {
-    localStorage.clear();
     this.setState({
-      isLoggedIn: false
+      isLoggedIn: false,
+      error: false
     });
   };
 
   componentDidMount() {
-    const user = localStorage.getItem('user');
-    const password = localStorage.getItem('password');
-    if (user === 'admin' && password === '12345') {
-      this.setState({ isLoggedIn: true });
-    }
+    localStorage.getItem('user');
+    localStorage.getItem('password');
   }
   render() {
-    const { user, password, isLoggedIn } = this.state;
+    const { user, password, isLoggedIn, error } = this.state;
     return (
       <div className="wrapper">
         <div className="login">
@@ -95,7 +98,7 @@ class Login extends Component {
           <div className="login-form mb-48">
             <form onSubmit={this.handleSubmit}>
               <label>
-                User
+                User name:
                 <input
                   className="input mb-32"
                   type="text"
@@ -108,7 +111,7 @@ class Login extends Component {
               </label>
 
               <label>
-                Password
+                Password:
                 <input
                   className="input mb-32"
                   name="password"
@@ -125,15 +128,18 @@ class Login extends Component {
               </button>
             </form>
 
-            {isLoggedIn ? (
+            {isLoggedIn && (
               <div>
-                <h1 className="success">Welcome</h1>
+                <h1 className="success">{'Welcome :)'}</h1>
                 <button className="submit" onClick={this.logout}>
                   Log Out
                 </button>
               </div>
-            ) : (
-              <h1>Sign in correct information</h1>
+            )}
+            {error && (
+              <div>
+                <h1 className="danger">ACCESS DENIED!</h1>
+              </div>
             )}
           </div>
         </div>
