@@ -11,12 +11,8 @@ import TableReport from './component/Table';
 import Table1 from './component/Table/Table1';
 import Table2 from './component/Table/Table2';
 import Table3 from './component/Table/Table3';
+import MainBlock from './component/Block/MainBlock';
 import Block from './component/Block';
-import Block1 from './component/Block/Block1';
-import Block2 from './component/Block/Block2';
-import Block3 from './component/Block/Block3';
-import Block4 from './component/Block/Block4';
-import Block5 from './component/Block/Block5';
 import TextList from './component/Text-List';
 import TextList1 from './component/Text-List/Text-List1';
 import TextList2 from './component/Text-List/Text-List2';
@@ -44,12 +40,8 @@ function App() {
 				<Route path="/table/table2" component={Table2} />
 				<Route path="/table/table3" component={Table3} />
 
-				<Route exact path="/block" component={Block} />
-				<Route path="/block/block1" component={Block1} />
-				<Route path="/block/block2" component={Block2} />
-				<Route path="/block/block3" component={Block3} />
-				<Route path="/block/block4" component={Block4} />
-				<Route path="/block/block5" component={Block5} />
+				<Route exact path="/block" component={MainBlock} />
+				<Route exact path="/block/:blockNum" component={Block} />
 
 				<Route exact path="/textlist" component={TextList} />
 				<Route path="/textlist/textlist1" component={TextList1} />
